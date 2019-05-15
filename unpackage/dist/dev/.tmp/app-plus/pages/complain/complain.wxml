@@ -1,0 +1,2 @@
+<import src="./complain.vue.wxml" />
+    <template is="5914375c" data="{{ ...$root['0'], $root }}"/>

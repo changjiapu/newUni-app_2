@@ -1,0 +1,2 @@
+<import src="./cz_psssword.vue.wxml" />
+    <template is="28cad39e" data="{{ ...$root['0'], $root }}"/>

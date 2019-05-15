@@ -1,0 +1,104 @@
+.content.data-v-44e8982b {
+  width: 100%;
+}
+.content .liubai.data-v-44e8982b {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f7f7f7;
+}
+.content .title.data-v-44e8982b {
+  padding: 0 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 95rpx;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.content .title image.data-v-44e8982b {
+  width: 50rpx;
+  height: 50rpx;
+}
+.content .title .date.data-v-44e8982b {
+  margin-left: 20rpx;
+}
+.content .title .tabs.data-v-44e8982b {
+  color: #ffffff;
+  background-color: #6d71d5;
+  position: absolute;
+  right: 30rpx;
+  height: 100%;
+  width: 130rpx;
+  padding-left: 20rpx;
+  line-height: 95rpx;
+  border-left: 1px solid #cccccc;
+}
+.content .item.data-v-44e8982b {
+  padding: 0 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 95rpx;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+  border-bottom: 1px solid #eeeeee;
+}
+.content .item .title2.data-v-44e8982b {
+  width: 100rpx;
+}
+.content .item.data-v-44e8982b:first-of-type {
+  color: #000000;
+  background-color: #f7f7f7;
+}
+.content .content.data-v-44e8982b {
+  position: absolute;
+  top: 135rpx;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content .content .list.data-v-44e8982b {
+  padding-left: 100rpx;
+  width: 100%;
+  background-color: #ffffff;
+  height: 95rpx;
+  line-height: 95rpx;
+  border-bottom: 1px solid #eeeeee;
+  -webkit-animation: aaa-data-v-44e8982b 0.8s;
+          animation: aaa-data-v-44e8982b 0.8s;
+}
+@-webkit-keyframes aaa-data-v-44e8982b {
+from {
+    height: 0;
+}
+to {
+    height: 95rpx;
+}
+}
+@keyframes aaa-data-v-44e8982b {
+from {
+    height: 0;
+}
+to {
+    height: 95rpx;
+}
+}
+

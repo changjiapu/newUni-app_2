@@ -1,0 +1,87 @@
+.content.data-v-c087e602 {
+  width: 100%;
+  font-size: 30rpx;
+}
+.content .head.data-v-c087e602 {
+  padding: 0 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 220rpx;
+  width: 100%;
+  color: #ffffff;
+  background-color: #6d71d5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .head .img_1.data-v-c087e602 {
+  height: 130rpx;
+  width: 130rpx;
+  border-radius: 100%;
+}
+.content .head .img_2.data-v-c087e602 {
+  height: 25rpx;
+  width: 25rpx;
+}
+.content .head .msg.data-v-c087e602 {
+  margin-left: 20rpx;
+  width: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content .head .msg text.data-v-c087e602:first-of-type {
+  font-weight: bold;
+}
+.content .liubai.data-v-c087e602 {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f7f7f7;
+}
+.content .list.data-v-c087e602 {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.content .list .list_item.data-v-c087e602 {
+  height: 95rpx;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+.content .list .list_item image.data-v-c087e602:first-of-type {
+  height: 40rpx;
+  width: 40rpx;
+}
+.content .list .list_item image.data-v-c087e602:last-of-type {
+  height: 30rpx;
+  width: 30rpx;
+}
+.content .list .list_item text.data-v-c087e602 {
+  margin-left: 5%;
+  width: 85%;
+}
+

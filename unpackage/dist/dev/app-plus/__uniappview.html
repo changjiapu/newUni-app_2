@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"西岗商户端","entryPagePath":"pages/index/index.html","page":{"pages/index/index.html":{"window":{"usingComponents":{},"navigationBarTitleText":"西安集贸"}},"pages/logn/logn.html":{"window":{"usingComponents":{},"navigationBarTitleText":"登录"}},"pages/merchant/merchant.html":{"window":{"usingComponents":{},"navigationBarTitleText":"商家入驻"}},"pages/shop_administration/shop_administration.html":{"window":{"usingComponents":{},"navigationBarTitleText":"店铺管理"}},"pages/commodity_management/commodity_management.html":{"window":{"usingComponents":{},"navigationBarTitleText":"商品管理"}},"pages/register/register.html":{"window":{"usingComponents":{},"navigationBarTitleText":"注册"}},"pages/user_center/user_center.html":{"window":{"usingComponents":{},"navigationBarTitleText":"个人中心"}},"pages/userMsg/userMsg.html":{"window":{"usingComponents":{},"navigationBarTitleText":"个人信息"}},"pages/productList/productList.html":{"window":{"usingComponents":{},"navigationBarTitleText":"商品统计表"}},"pages/xiaolingTJ/xiaolingTJ.html":{"window":{"usingComponents":{},"navigationBarTitleText":"销量统计表"}},"pages/shouruTJ/shouruTJ.html":{"window":{"usingComponents":{},"navigationBarTitleText":"收入统计表"}},"pages/addProduct/addProduct.html":{"window":{"usingComponents":{},"navigationBarTitleText":"商品添加"}},"pages/myOrder/myOrder.html":{"window":{"usingComponents":{},"navigationBarTitleText":"订单确认"}},"pages/Account_center/Account_center.html":{"window":{"usingComponents":{},"navigationBarTitleText":"账户设置"}},"pages/cz_psssword/cz_psssword.html":{"window":{"usingComponents":{},"navigationBarTitleText":"重置密码"}},"pages/callCenter/callCenter.html":{"window":{"usingComponents":{},"navigationBarTitleText":"联系客服"}},"pages/complain/complain.html":{"window":{"usingComponents":{},"navigationBarTitleText":"意见反馈"}},"pages/gonggaoFabu/gonggaoFabu.html":{"window":{"usingComponents":{},"navigationBarTitleText":"公告发布"}},"pages/wjPassword/wjPassword.html":{"window":{"usingComponents":{},"navigationBarTitleText":"忘记密码"}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarTitleText":"","navigationBarBackgroundColor":"#6d71d5","backgroundColor":"#6d71d5"}},"tabBar":{"color":"#7A7E83","selectedColor":"#3cc51f","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/index/index.html","iconPath":"static/baobiaotongjiweixuanzhong_22.png","selectedIconPath":"static/baobiaotongji_17.png","text":"报表统计"},{"pagePath":"pages/shop_administration/shop_administration.html","iconPath":"static/shangpuguanli_20.png","selectedIconPath":"static/shangpuguanlixuanzhong_03.png","text":"店铺管理"},{"pagePath":"pages/commodity_management/commodity_management.html","iconPath":"static/shnagpinguanli_23.png","selectedIconPath":"static/shangpinguanlixuanzhong_25.png","text":"商品管理"},{"pagePath":"pages/user_center/user_center.html","iconPath":"static/gerenzhongxin_25.png","selectedIconPath":"static/wodexuanzhong_22.png","text":"个人中心"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/index","pages/logn/logn","pages/merchant/merchant","pages/shop_administration/shop_administration","pages/commodity_management/commodity_management","pages/register/register","pages/user_center/user_center","pages/userMsg/userMsg","pages/productList/productList","pages/xiaolingTJ/xiaolingTJ","pages/shouruTJ/shouruTJ","pages/addProduct/addProduct","pages/myOrder/myOrder","pages/Account_center/Account_center","pages/cz_psssword/cz_psssword","pages/callCenter/callCenter","pages/complain/complain","pages/gonggaoFabu/gonggaoFabu","pages/wjPassword/wjPassword"],"subPackages":[],"usingComponents":{},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"1.9.4"}
+
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+            };
+
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

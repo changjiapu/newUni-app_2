@@ -1,0 +1,32 @@
+.content.data-v-61adba92 {
+  width: 100%;
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+.content .item.data-v-61adba92 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 95rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+.content .item text.data-v-61adba92 {
+  width: 150rpx;
+}
+.content .btn.data-v-61adba92 {
+  height: 95rpx;
+  line-height: 95rpx;
+  width: 80%;
+  background-color: #6d71d5;
+  margin: auto;
+  margin-top: 30rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  color: #ffffff;
+}
+

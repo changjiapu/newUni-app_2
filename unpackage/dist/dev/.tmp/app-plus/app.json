@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logn/logn",
+    "pages/merchant/merchant",
+    "pages/shop_administration/shop_administration",
+    "pages/commodity_management/commodity_management",
+    "pages/register/register",
+    "pages/user_center/user_center",
+    "pages/userMsg/userMsg",
+    "pages/productList/productList",
+    "pages/xiaolingTJ/xiaolingTJ",
+    "pages/shouruTJ/shouruTJ",
+    "pages/addProduct/addProduct",
+    "pages/myOrder/myOrder",
+    "pages/Account_center/Account_center",
+    "pages/cz_psssword/cz_psssword",
+    "pages/callCenter/callCenter",
+    "pages/complain/complain",
+    "pages/gonggaoFabu/gonggaoFabu",
+    "pages/wjPassword/wjPassword"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#6d71d5",
+    "backgroundColor": "#6d71d5"
+  },
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/baobiaotongjiweixuanzhong_22.png",
+        "selectedIconPath": "static/baobiaotongji_17.png",
+        "text": "报表统计"
+      },
+      {
+        "pagePath": "pages/shop_administration/shop_administration",
+        "iconPath": "static/shangpuguanli_20.png",
+        "selectedIconPath": "static/shangpuguanlixuanzhong_03.png",
+        "text": "店铺管理"
+      },
+      {
+        "pagePath": "pages/commodity_management/commodity_management",
+        "iconPath": "static/shnagpinguanli_23.png",
+        "selectedIconPath": "static/shangpinguanlixuanzhong_25.png",
+        "text": "商品管理"
+      },
+      {
+        "pagePath": "pages/user_center/user_center",
+        "iconPath": "static/gerenzhongxin_25.png",
+        "selectedIconPath": "static/wodexuanzhong_22.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "西岗商户端",
+  "compilerVersion": "1.9.4"
+}

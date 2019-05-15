@@ -1,0 +1,102 @@
+.content.data-v-5e16b7b2 {
+  width: 100%;
+}
+.content .tabs.data-v-5e16b7b2 {
+  width: 100%;
+  height: 90rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.content .tabs text.data-v-5e16b7b2 {
+  height: 100%;
+  line-height: 90rpx;
+  width: 140rpx;
+  text-align: center;
+}
+.content .tabs text.active.data-v-5e16b7b2 {
+  color: #ed7180;
+  border-bottom: 1px solid #ed7180;
+}
+.content .item.data-v-5e16b7b2 {
+  padding: 20rpx;
+}
+.content .item .head.data-v-5e16b7b2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.content .item .head image.data-v-5e16b7b2 {
+  height: 160rpx;
+  width: 210rpx;
+}
+.content .item .head .msg.data-v-5e16b7b2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-left: 15rpx;
+  color: #999999;
+}
+.content .item .head .msg .price.data-v-5e16b7b2 {
+  position: absolute;
+  top: 10rpx;
+  right: 20rpx;
+  color: red;
+}
+.content .item .head .msg .title.data-v-5e16b7b2 {
+  color: #000000;
+}
+.content .item .footer.data-v-5e16b7b2 {
+  margin-top: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #eeeeee;
+  height: 100rpx;
+  width: 100%;
+}
+.content .item .footer text.data-v-5e16b7b2 {
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  width: 150rpx;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+}
+.content .item .footer text.quxiao.data-v-5e16b7b2 {
+  color: #999999;
+  border: 1px solid #999999;
+}
+.content .item .footer text.queren.data-v-5e16b7b2 {
+  background-color: #ed7180;
+  color: #ffffff;
+}
+.content .item .footer text.queren2.data-v-5e16b7b2 {
+  background-color: #cccccc;
+  color: #555555;
+}
+
