@@ -1417,22 +1417,19 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/echarts/echarts.vue.wxml','./components/echarts/echarts.vue.wxml','./pages/Account_center/Account_center.vue.wxml','./pages/Account_center/Account_center.wxml','./Account_center.vue.wxml','./pages/addProduct/addProduct.vue.wxml','./pages/addProduct/addProduct.wxml','./addProduct.vue.wxml','./pages/callCenter/callCenter.vue.wxml','./pages/callCenter/callCenter.wxml','./callCenter.vue.wxml','./pages/commodity_management/commodity_management.vue.wxml','./pages/commodity_management/commodity_management.wxml','./commodity_management.vue.wxml','./pages/complain/complain.vue.wxml','./pages/complain/complain.wxml','./complain.vue.wxml','./pages/cz_psssword/cz_psssword.vue.wxml','./pages/cz_psssword/cz_psssword.wxml','./cz_psssword.vue.wxml','./pages/gonggaoFabu/gonggaoFabu.vue.wxml','./pages/gonggaoFabu/gonggaoFabu.wxml','./gonggaoFabu.vue.wxml','./pages/index/index.vue.wxml','./pages/index/index.wxml','./index.vue.wxml','./pages/logn/logn.vue.wxml','./pages/logn/logn.wxml','./logn.vue.wxml','./pages/merchant/merchant.vue.wxml','./pages/merchant/merchant.wxml','./merchant.vue.wxml','./pages/myOrder/myOrder.vue.wxml','./pages/myOrder/myOrder.wxml','./myOrder.vue.wxml','./pages/productList/productList.vue.wxml','./pages/productList/productList.wxml','./productList.vue.wxml','./pages/register/register.vue.wxml','./pages/register/register.wxml','./register.vue.wxml','./pages/shop_administration/shop_administration.vue.wxml','./pages/shop_administration/shop_administration.wxml','./shop_administration.vue.wxml','./pages/shouruTJ/shouruTJ.vue.wxml','./pages/shouruTJ/shouruTJ.wxml','./shouruTJ.vue.wxml','./pages/userMsg/userMsg.vue.wxml','./pages/userMsg/userMsg.wxml','./userMsg.vue.wxml','./pages/user_center/user_center.vue.wxml','./pages/user_center/user_center.wxml','./user_center.vue.wxml','./pages/wjPassword/wjPassword.vue.wxml','./pages/wjPassword/wjPassword.wxml','./wjPassword.vue.wxml','./pages/xiaolingTJ/xiaolingTJ.vue.wxml','./pages/xiaolingTJ/xiaolingTJ.wxml','./xiaolingTJ.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','./components/echarts/echarts.vue.wxml','./pages/Account_center/Account_center.vue.wxml','./pages/Account_center/Account_center.wxml','./Account_center.vue.wxml','./pages/addProduct/addProduct.vue.wxml','./pages/addProduct/addProduct.wxml','./addProduct.vue.wxml','./pages/callCenter/callCenter.vue.wxml','./pages/callCenter/callCenter.wxml','./callCenter.vue.wxml','./pages/commodity_management/commodity_management.vue.wxml','./pages/commodity_management/commodity_management.wxml','./commodity_management.vue.wxml','./pages/complain/complain.vue.wxml','./pages/complain/complain.wxml','./complain.vue.wxml','./pages/cz_psssword/cz_psssword.vue.wxml','./pages/cz_psssword/cz_psssword.wxml','./cz_psssword.vue.wxml','./pages/gonggaoFabu/gonggaoFabu.vue.wxml','./pages/gonggaoFabu/gonggaoFabu.wxml','./gonggaoFabu.vue.wxml','./pages/index/index.vue.wxml','/components/echarts/echarts.vue.wxml','./pages/index/index.wxml','./index.vue.wxml','./pages/logn/logn.vue.wxml','./pages/logn/logn.wxml','./logn.vue.wxml','./pages/merchant/merchant.vue.wxml','./pages/merchant/merchant.wxml','./merchant.vue.wxml','./pages/myOrder/myOrder.vue.wxml','./pages/myOrder/myOrder.wxml','./myOrder.vue.wxml','./pages/productList/productList.vue.wxml','./pages/productList/productList.wxml','./productList.vue.wxml','./pages/register/register.vue.wxml','./pages/register/register.wxml','./register.vue.wxml','./pages/shop_administration/shop_administration.vue.wxml','./pages/shop_administration/shop_administration.wxml','./shop_administration.vue.wxml','./pages/shouruTJ/shouruTJ.vue.wxml','./pages/shouruTJ/shouruTJ.wxml','./shouruTJ.vue.wxml','./pages/userMsg/userMsg.vue.wxml','./pages/userMsg/userMsg.wxml','./userMsg.vue.wxml','./pages/user_center/user_center.vue.wxml','./pages/user_center/user_center.wxml','./user_center.vue.wxml','./pages/wjPassword/wjPassword.vue.wxml','./pages/wjPassword/wjPassword.wxml','./wjPassword.vue.wxml','./pages/xiaolingTJ/xiaolingTJ.vue.wxml','./pages/xiaolingTJ/xiaolingTJ.wxml','./xiaolingTJ.vue.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
-var oB=e_[x[0]].i
-_ai(oB,x[1],e_,x[0],1,1)
-oB.pop()
 return r
 }
-e_[x[0]]={f:m0,j:[],i:[],ti:[x[1]],ic:[]}
-d_[x[2]]={}
-d_[x[2]]["3cf56ac4"]=function(e,s,r,gg){
+e_[x[0]]={f:m0,j:[],i:[],ti:[],ic:[]}
+d_[x[1]]={}
+d_[x[1]]["3cf56ac4"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[2]+':3cf56ac4'
+var b=x[1]+':3cf56ac4'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/echarts/echarts.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[2]);return}
+if(p_[b]){_wl(b,x[1]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -1453,14 +1450,14 @@ var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
 return r
 }
-e_[x[2]]={f:m1,j:[],i:[],ti:[],ic:[]}
-d_[x[3]]={}
-d_[x[3]]["10015b92"]=function(e,s,r,gg){
+e_[x[1]]={f:m1,j:[],i:[],ti:[],ic:[]}
+d_[x[2]]={}
+d_[x[2]]["10015b92"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[3]+':10015b92'
+var b=x[2]+':10015b92'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/Account_center/Account_center.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[3]);return}
+if(p_[b]){_wl(b,x[2]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1474,37 +1471,37 @@ var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
 return r
 }
-e_[x[3]]={f:m2,j:[],i:[],ti:[],ic:[]}
-d_[x[4]]={}
+e_[x[2]]={f:m2,j:[],i:[],ti:[],ic:[]}
+d_[x[3]]={}
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
-var cF=e_[x[4]].i
-_ai(cF,x[5],e_,x[4],1,1)
-var hG=_v()
-_(r,hG)
+var fE=e_[x[3]].i
+_ai(fE,x[4],e_,x[3],1,1)
+var cF=_v()
+_(r,cF)
 cs.push("./pages/Account_center/Account_center.wxml:template:2:6")
-var oH=_oz(z,1,e,s,gg)
-var cI=_gd(x[4],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,0,e,s,gg) || {}
+var hG=_oz(z,1,e,s,gg)
+var oH=_gd(x[3],hG,e_,d_)
+if(oH){
+var cI=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[4],2,18)
+else _w(hG,x[3],2,18)
 cs.pop()
-cF.pop()
+fE.pop()
 return r
 }
-e_[x[4]]={f:m3,j:[],i:[],ti:[x[5]],ic:[]}
-d_[x[6]]={}
-d_[x[6]]["10a01032"]=function(e,s,r,gg){
+e_[x[3]]={f:m3,j:[],i:[],ti:[x[4]],ic:[]}
+d_[x[5]]={}
+d_[x[5]]["10a01032"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[6]+':10a01032'
+var b=x[5]+':10a01032'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/addProduct/addProduct.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[6]);return}
+if(p_[b]){_wl(b,x[5]);return}
 p_[b]=true
 try{
 cs.push("./pages/addProduct/addProduct.vue.wxml:view:1:27")
@@ -1647,37 +1644,37 @@ var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
 return r
 }
-e_[x[6]]={f:m4,j:[],i:[],ti:[],ic:[]}
-d_[x[7]]={}
+e_[x[5]]={f:m4,j:[],i:[],ti:[],ic:[]}
+d_[x[6]]={}
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
-var tM=e_[x[7]].i
-_ai(tM,x[8],e_,x[7],1,1)
-var eN=_v()
-_(r,eN)
+var aL=e_[x[6]].i
+_ai(aL,x[7],e_,x[6],1,1)
+var tM=_v()
+_(r,tM)
 cs.push("./pages/addProduct/addProduct.wxml:template:2:6")
-var bO=_oz(z,1,e,s,gg)
-var oP=_gd(x[7],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,0,e,s,gg) || {}
+var eN=_oz(z,1,e,s,gg)
+var bO=_gd(x[6],eN,e_,d_)
+if(bO){
+var oP=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
+tM.wxXCkey=3
+bO(oP,oP,tM,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[7],2,18)
+else _w(eN,x[6],2,18)
 cs.pop()
-tM.pop()
+aL.pop()
 return r
 }
-e_[x[7]]={f:m5,j:[],i:[],ti:[x[8]],ic:[]}
-d_[x[9]]={}
-d_[x[9]]["12ea4312"]=function(e,s,r,gg){
+e_[x[6]]={f:m5,j:[],i:[],ti:[x[7]],ic:[]}
+d_[x[8]]={}
+d_[x[8]]["12ea4312"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[9]+':12ea4312'
+var b=x[8]+':12ea4312'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/callCenter/callCenter.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[9]);return}
+if(p_[b]){_wl(b,x[8]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1691,37 +1688,37 @@ var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
 return r
 }
-e_[x[9]]={f:m6,j:[],i:[],ti:[],ic:[]}
-d_[x[10]]={}
+e_[x[8]]={f:m6,j:[],i:[],ti:[],ic:[]}
+d_[x[9]]={}
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var cT=e_[x[10]].i
-_ai(cT,x[11],e_,x[10],1,1)
-var hU=_v()
-_(r,hU)
+var fS=e_[x[9]].i
+_ai(fS,x[10],e_,x[9],1,1)
+var cT=_v()
+_(r,cT)
 cs.push("./pages/callCenter/callCenter.wxml:template:2:6")
-var oV=_oz(z,1,e,s,gg)
-var cW=_gd(x[10],oV,e_,d_)
-if(cW){
-var oX=_1z(z,0,e,s,gg) || {}
+var hU=_oz(z,1,e,s,gg)
+var oV=_gd(x[9],hU,e_,d_)
+if(oV){
+var cW=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hU.wxXCkey=3
-cW(oX,oX,hU,gg)
+cT.wxXCkey=3
+oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[10],2,18)
+else _w(hU,x[9],2,18)
 cs.pop()
-cT.pop()
+fS.pop()
 return r
 }
-e_[x[10]]={f:m7,j:[],i:[],ti:[x[11]],ic:[]}
-d_[x[12]]={}
-d_[x[12]]["3281b45c"]=function(e,s,r,gg){
+e_[x[9]]={f:m7,j:[],i:[],ti:[x[10]],ic:[]}
+d_[x[11]]={}
+d_[x[11]]["3281b45c"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[12]+':3281b45c'
+var b=x[11]+':3281b45c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/commodity_management/commodity_management.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[12]);return}
+if(p_[b]){_wl(b,x[11]);return}
 p_[b]=true
 try{
 cs.push("./pages/commodity_management/commodity_management.vue.wxml:view:1:27")
@@ -1774,37 +1771,37 @@ var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
 return r
 }
-e_[x[12]]={f:m8,j:[],i:[],ti:[],ic:[]}
-d_[x[13]]={}
+e_[x[11]]={f:m8,j:[],i:[],ti:[],ic:[]}
+d_[x[12]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var t1=e_[x[13]].i
-_ai(t1,x[14],e_,x[13],1,1)
-var e2=_v()
-_(r,e2)
+var aZ=e_[x[12]].i
+_ai(aZ,x[13],e_,x[12],1,1)
+var t1=_v()
+_(r,t1)
 cs.push("./pages/commodity_management/commodity_management.wxml:template:2:6")
-var b3=_oz(z,1,e,s,gg)
-var o4=_gd(x[13],b3,e_,d_)
-if(o4){
-var x5=_1z(z,0,e,s,gg) || {}
+var e2=_oz(z,1,e,s,gg)
+var b3=_gd(x[12],e2,e_,d_)
+if(b3){
+var o4=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-e2.wxXCkey=3
-o4(x5,x5,e2,gg)
+t1.wxXCkey=3
+b3(o4,o4,t1,gg)
 gg.f=cur_globalf
 }
-else _w(b3,x[13],2,18)
+else _w(e2,x[12],2,18)
 cs.pop()
-t1.pop()
+aZ.pop()
 return r
 }
-e_[x[13]]={f:m9,j:[],i:[],ti:[x[14]],ic:[]}
-d_[x[15]]={}
-d_[x[15]]["5914375c"]=function(e,s,r,gg){
+e_[x[12]]={f:m9,j:[],i:[],ti:[x[13]],ic:[]}
+d_[x[14]]={}
+d_[x[14]]["5914375c"]=function(e,s,r,gg){
 var z=gz$gwx_11()
-var b=x[15]+':5914375c'
+var b=x[14]+':5914375c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/complain/complain.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[15]);return}
+if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1818,37 +1815,37 @@ var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
 return r
 }
-e_[x[15]]={f:m10,j:[],i:[],ti:[],ic:[]}
-d_[x[16]]={}
+e_[x[14]]={f:m10,j:[],i:[],ti:[],ic:[]}
+d_[x[15]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var c8=e_[x[16]].i
-_ai(c8,x[17],e_,x[16],1,1)
-var h9=_v()
-_(r,h9)
+var f7=e_[x[15]].i
+_ai(f7,x[16],e_,x[15],1,1)
+var c8=_v()
+_(r,c8)
 cs.push("./pages/complain/complain.wxml:template:2:6")
-var o0=_oz(z,1,e,s,gg)
-var cAB=_gd(x[16],o0,e_,d_)
-if(cAB){
-var oBB=_1z(z,0,e,s,gg) || {}
+var h9=_oz(z,1,e,s,gg)
+var o0=_gd(x[15],h9,e_,d_)
+if(o0){
+var cAB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-h9.wxXCkey=3
-cAB(oBB,oBB,h9,gg)
+c8.wxXCkey=3
+o0(cAB,cAB,c8,gg)
 gg.f=cur_globalf
 }
-else _w(o0,x[16],2,18)
+else _w(h9,x[15],2,18)
 cs.pop()
-c8.pop()
+f7.pop()
 return r
 }
-e_[x[16]]={f:m11,j:[],i:[],ti:[x[17]],ic:[]}
-d_[x[18]]={}
-d_[x[18]]["28cad39e"]=function(e,s,r,gg){
+e_[x[15]]={f:m11,j:[],i:[],ti:[x[16]],ic:[]}
+d_[x[17]]={}
+d_[x[17]]["28cad39e"]=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b=x[18]+':28cad39e'
+var b=x[17]+':28cad39e'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/cz_psssword/cz_psssword.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[18]);return}
+if(p_[b]){_wl(b,x[17]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1862,37 +1859,37 @@ var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
 return r
 }
-e_[x[18]]={f:m12,j:[],i:[],ti:[],ic:[]}
-d_[x[19]]={}
+e_[x[17]]={f:m12,j:[],i:[],ti:[],ic:[]}
+d_[x[18]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var tEB=e_[x[19]].i
-_ai(tEB,x[20],e_,x[19],1,1)
-var eFB=_v()
-_(r,eFB)
+var aDB=e_[x[18]].i
+_ai(aDB,x[19],e_,x[18],1,1)
+var tEB=_v()
+_(r,tEB)
 cs.push("./pages/cz_psssword/cz_psssword.wxml:template:2:6")
-var bGB=_oz(z,1,e,s,gg)
-var oHB=_gd(x[19],bGB,e_,d_)
-if(oHB){
-var xIB=_1z(z,0,e,s,gg) || {}
+var eFB=_oz(z,1,e,s,gg)
+var bGB=_gd(x[18],eFB,e_,d_)
+if(bGB){
+var oHB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-eFB.wxXCkey=3
-oHB(xIB,xIB,eFB,gg)
+tEB.wxXCkey=3
+bGB(oHB,oHB,tEB,gg)
 gg.f=cur_globalf
 }
-else _w(bGB,x[19],2,18)
+else _w(eFB,x[18],2,18)
 cs.pop()
-tEB.pop()
+aDB.pop()
 return r
 }
-e_[x[19]]={f:m13,j:[],i:[],ti:[x[20]],ic:[]}
-d_[x[21]]={}
-d_[x[21]]["4ecfa638"]=function(e,s,r,gg){
+e_[x[18]]={f:m13,j:[],i:[],ti:[x[19]],ic:[]}
+d_[x[20]]={}
+d_[x[20]]["4ecfa638"]=function(e,s,r,gg){
 var z=gz$gwx_15()
-var b=x[21]+':4ecfa638'
+var b=x[20]+':4ecfa638'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/gonggaoFabu/gonggaoFabu.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[21]);return}
+if(p_[b]){_wl(b,x[20]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1906,37 +1903,37 @@ var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
 return r
 }
-e_[x[21]]={f:m14,j:[],i:[],ti:[],ic:[]}
-d_[x[22]]={}
+e_[x[20]]={f:m14,j:[],i:[],ti:[],ic:[]}
+d_[x[21]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
-var cLB=e_[x[22]].i
-_ai(cLB,x[23],e_,x[22],1,1)
-var hMB=_v()
-_(r,hMB)
+var fKB=e_[x[21]].i
+_ai(fKB,x[22],e_,x[21],1,1)
+var cLB=_v()
+_(r,cLB)
 cs.push("./pages/gonggaoFabu/gonggaoFabu.wxml:template:2:6")
-var oNB=_oz(z,1,e,s,gg)
-var cOB=_gd(x[22],oNB,e_,d_)
-if(cOB){
-var oPB=_1z(z,0,e,s,gg) || {}
+var hMB=_oz(z,1,e,s,gg)
+var oNB=_gd(x[21],hMB,e_,d_)
+if(oNB){
+var cOB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hMB.wxXCkey=3
-cOB(oPB,oPB,hMB,gg)
+cLB.wxXCkey=3
+oNB(cOB,cOB,cLB,gg)
 gg.f=cur_globalf
 }
-else _w(oNB,x[22],2,18)
+else _w(hMB,x[21],2,18)
 cs.pop()
-cLB.pop()
+fKB.pop()
 return r
 }
-e_[x[22]]={f:m15,j:[],i:[],ti:[x[23]],ic:[]}
-d_[x[24]]={}
-d_[x[24]]["609606d0"]=function(e,s,r,gg){
+e_[x[21]]={f:m15,j:[],i:[],ti:[x[22]],ic:[]}
+d_[x[23]]={}
+d_[x[23]]["609606d0"]=function(e,s,r,gg){
 var z=gz$gwx_17()
-var b=x[24]+':609606d0'
+var b=x[23]+':609606d0'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/index/index.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[24]);return}
+if(p_[b]){_wl(b,x[23]);return}
 p_[b]=true
 try{
 cs.push("./pages/index/index.vue.wxml:view:1:80")
@@ -1946,7 +1943,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/index/index.vue.wxml:template:1:3165")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[24],oD,e_,d_)
+var fE=_gd(x[23],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1954,13 +1951,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[24],1,3266)
+else _w(oD,x[23],1,3266)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/index/index.vue.wxml:template:1:3368")
 var oH=_oz(z,8,e,s,gg)
-var cI=_gd(x[24],oH,e_,d_)
+var cI=_gd(x[23],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1968,13 +1965,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[24],1,3471)
+else _w(oH,x[23],1,3471)
 cs.pop()
 var lK=_v()
 _(oB,lK)
 cs.push("./pages/index/index.vue.wxml:template:1:3573")
 var aL=_oz(z,12,e,s,gg)
-var tM=_gd(x[24],aL,e_,d_)
+var tM=_gd(x[23],aL,e_,d_)
 if(tM){
 var eN=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1982,7 +1979,7 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[24],1,3674)
+else _w(aL,x[23],1,3674)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -1995,32 +1992,32 @@ return r
 }
 var m16=function(e,s,r,gg){
 var z=gz$gwx_17()
-var aRB=e_[x[24]].i
-_ai(aRB,x[1],e_,x[24],1,1)
-aRB.pop()
+var lQB=e_[x[23]].i
+_ai(lQB,x[24],e_,x[23],1,1)
+lQB.pop()
 return r
 }
-e_[x[24]]={f:m16,j:[],i:[],ti:[x[1]],ic:[]}
+e_[x[23]]={f:m16,j:[],i:[],ti:[x[24]],ic:[]}
 d_[x[25]]={}
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
-var eTB=e_[x[25]].i
-_ai(eTB,x[26],e_,x[25],1,1)
-var bUB=_v()
-_(r,bUB)
+var tSB=e_[x[25]].i
+_ai(tSB,x[26],e_,x[25],1,1)
+var eTB=_v()
+_(r,eTB)
 cs.push("./pages/index/index.wxml:template:2:6")
-var oVB=_oz(z,1,e,s,gg)
-var xWB=_gd(x[25],oVB,e_,d_)
-if(xWB){
-var oXB=_1z(z,0,e,s,gg) || {}
+var bUB=_oz(z,1,e,s,gg)
+var oVB=_gd(x[25],bUB,e_,d_)
+if(oVB){
+var xWB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-bUB.wxXCkey=3
-xWB(oXB,oXB,bUB,gg)
+eTB.wxXCkey=3
+oVB(xWB,xWB,eTB,gg)
 gg.f=cur_globalf
 }
-else _w(oVB,x[25],2,18)
+else _w(bUB,x[25],2,18)
 cs.pop()
-eTB.pop()
+tSB.pop()
 return r
 }
 e_[x[25]]={f:m17,j:[],i:[],ti:[x[26]],ic:[]}
@@ -2048,23 +2045,23 @@ e_[x[27]]={f:m18,j:[],i:[],ti:[],ic:[]}
 d_[x[28]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
-var h1B=e_[x[28]].i
-_ai(h1B,x[29],e_,x[28],1,1)
-var o2B=_v()
-_(r,o2B)
+var cZB=e_[x[28]].i
+_ai(cZB,x[29],e_,x[28],1,1)
+var h1B=_v()
+_(r,h1B)
 cs.push("./pages/logn/logn.wxml:template:2:6")
-var c3B=_oz(z,1,e,s,gg)
-var o4B=_gd(x[28],c3B,e_,d_)
-if(o4B){
-var l5B=_1z(z,0,e,s,gg) || {}
+var o2B=_oz(z,1,e,s,gg)
+var c3B=_gd(x[28],o2B,e_,d_)
+if(c3B){
+var o4B=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-o2B.wxXCkey=3
-o4B(l5B,l5B,o2B,gg)
+h1B.wxXCkey=3
+c3B(o4B,o4B,h1B,gg)
 gg.f=cur_globalf
 }
-else _w(c3B,x[28],2,18)
+else _w(o2B,x[28],2,18)
 cs.pop()
-h1B.pop()
+cZB.pop()
 return r
 }
 e_[x[28]]={f:m19,j:[],i:[],ti:[x[29]],ic:[]}
@@ -2092,23 +2089,23 @@ e_[x[30]]={f:m20,j:[],i:[],ti:[],ic:[]}
 d_[x[31]]={}
 var m21=function(e,s,r,gg){
 var z=gz$gwx_22()
-var e8B=e_[x[31]].i
-_ai(e8B,x[32],e_,x[31],1,1)
-var b9B=_v()
-_(r,b9B)
+var t7B=e_[x[31]].i
+_ai(t7B,x[32],e_,x[31],1,1)
+var e8B=_v()
+_(r,e8B)
 cs.push("./pages/merchant/merchant.wxml:template:2:6")
-var o0B=_oz(z,1,e,s,gg)
-var xAC=_gd(x[31],o0B,e_,d_)
-if(xAC){
-var oBC=_1z(z,0,e,s,gg) || {}
+var b9B=_oz(z,1,e,s,gg)
+var o0B=_gd(x[31],b9B,e_,d_)
+if(o0B){
+var xAC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-b9B.wxXCkey=3
-xAC(oBC,oBC,b9B,gg)
+e8B.wxXCkey=3
+o0B(xAC,xAC,e8B,gg)
 gg.f=cur_globalf
 }
-else _w(o0B,x[31],2,18)
+else _w(b9B,x[31],2,18)
 cs.pop()
-e8B.pop()
+t7B.pop()
 return r
 }
 e_[x[31]]={f:m21,j:[],i:[],ti:[x[32]],ic:[]}
@@ -2171,23 +2168,23 @@ e_[x[33]]={f:m22,j:[],i:[],ti:[],ic:[]}
 d_[x[34]]={}
 var m23=function(e,s,r,gg){
 var z=gz$gwx_24()
-var hEC=e_[x[34]].i
-_ai(hEC,x[35],e_,x[34],1,1)
-var oFC=_v()
-_(r,oFC)
+var cDC=e_[x[34]].i
+_ai(cDC,x[35],e_,x[34],1,1)
+var hEC=_v()
+_(r,hEC)
 cs.push("./pages/myOrder/myOrder.wxml:template:2:6")
-var cGC=_oz(z,1,e,s,gg)
-var oHC=_gd(x[34],cGC,e_,d_)
-if(oHC){
-var lIC=_1z(z,0,e,s,gg) || {}
+var oFC=_oz(z,1,e,s,gg)
+var cGC=_gd(x[34],oFC,e_,d_)
+if(cGC){
+var oHC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oFC.wxXCkey=3
-oHC(lIC,lIC,oFC,gg)
+hEC.wxXCkey=3
+cGC(oHC,oHC,hEC,gg)
 gg.f=cur_globalf
 }
-else _w(cGC,x[34],2,18)
+else _w(oFC,x[34],2,18)
 cs.pop()
-hEC.pop()
+cDC.pop()
 return r
 }
 e_[x[34]]={f:m23,j:[],i:[],ti:[x[35]],ic:[]}
@@ -2215,23 +2212,23 @@ e_[x[36]]={f:m24,j:[],i:[],ti:[],ic:[]}
 d_[x[37]]={}
 var m25=function(e,s,r,gg){
 var z=gz$gwx_26()
-var eLC=e_[x[37]].i
-_ai(eLC,x[38],e_,x[37],1,1)
-var bMC=_v()
-_(r,bMC)
+var tKC=e_[x[37]].i
+_ai(tKC,x[38],e_,x[37],1,1)
+var eLC=_v()
+_(r,eLC)
 cs.push("./pages/productList/productList.wxml:template:2:6")
-var oNC=_oz(z,1,e,s,gg)
-var xOC=_gd(x[37],oNC,e_,d_)
-if(xOC){
-var oPC=_1z(z,0,e,s,gg) || {}
+var bMC=_oz(z,1,e,s,gg)
+var oNC=_gd(x[37],bMC,e_,d_)
+if(oNC){
+var xOC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-bMC.wxXCkey=3
-xOC(oPC,oPC,bMC,gg)
+eLC.wxXCkey=3
+oNC(xOC,xOC,eLC,gg)
 gg.f=cur_globalf
 }
-else _w(oNC,x[37],2,18)
+else _w(bMC,x[37],2,18)
 cs.pop()
-eLC.pop()
+tKC.pop()
 return r
 }
 e_[x[37]]={f:m25,j:[],i:[],ti:[x[38]],ic:[]}
@@ -2259,23 +2256,23 @@ e_[x[39]]={f:m26,j:[],i:[],ti:[],ic:[]}
 d_[x[40]]={}
 var m27=function(e,s,r,gg){
 var z=gz$gwx_28()
-var hSC=e_[x[40]].i
-_ai(hSC,x[41],e_,x[40],1,1)
-var oTC=_v()
-_(r,oTC)
+var cRC=e_[x[40]].i
+_ai(cRC,x[41],e_,x[40],1,1)
+var hSC=_v()
+_(r,hSC)
 cs.push("./pages/register/register.wxml:template:2:6")
-var cUC=_oz(z,1,e,s,gg)
-var oVC=_gd(x[40],cUC,e_,d_)
-if(oVC){
-var lWC=_1z(z,0,e,s,gg) || {}
+var oTC=_oz(z,1,e,s,gg)
+var cUC=_gd(x[40],oTC,e_,d_)
+if(cUC){
+var oVC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oTC.wxXCkey=3
-oVC(lWC,lWC,oTC,gg)
+hSC.wxXCkey=3
+cUC(oVC,oVC,hSC,gg)
 gg.f=cur_globalf
 }
-else _w(cUC,x[40],2,18)
+else _w(oTC,x[40],2,18)
 cs.pop()
-hSC.pop()
+cRC.pop()
 return r
 }
 e_[x[40]]={f:m27,j:[],i:[],ti:[x[41]],ic:[]}
@@ -2322,23 +2319,23 @@ e_[x[42]]={f:m28,j:[],i:[],ti:[],ic:[]}
 d_[x[43]]={}
 var m29=function(e,s,r,gg){
 var z=gz$gwx_30()
-var eZC=e_[x[43]].i
-_ai(eZC,x[44],e_,x[43],1,1)
-var b1C=_v()
-_(r,b1C)
+var tYC=e_[x[43]].i
+_ai(tYC,x[44],e_,x[43],1,1)
+var eZC=_v()
+_(r,eZC)
 cs.push("./pages/shop_administration/shop_administration.wxml:template:2:6")
-var o2C=_oz(z,1,e,s,gg)
-var x3C=_gd(x[43],o2C,e_,d_)
-if(x3C){
-var o4C=_1z(z,0,e,s,gg) || {}
+var b1C=_oz(z,1,e,s,gg)
+var o2C=_gd(x[43],b1C,e_,d_)
+if(o2C){
+var x3C=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-b1C.wxXCkey=3
-x3C(o4C,o4C,b1C,gg)
+eZC.wxXCkey=3
+o2C(x3C,x3C,eZC,gg)
 gg.f=cur_globalf
 }
-else _w(o2C,x[43],2,18)
+else _w(b1C,x[43],2,18)
 cs.pop()
-eZC.pop()
+tYC.pop()
 return r
 }
 e_[x[43]]={f:m29,j:[],i:[],ti:[x[44]],ic:[]}
@@ -2373,23 +2370,23 @@ e_[x[45]]={f:m30,j:[],i:[],ti:[],ic:[]}
 d_[x[46]]={}
 var m31=function(e,s,r,gg){
 var z=gz$gwx_32()
-var h7C=e_[x[46]].i
-_ai(h7C,x[47],e_,x[46],1,1)
-var o8C=_v()
-_(r,o8C)
+var c6C=e_[x[46]].i
+_ai(c6C,x[47],e_,x[46],1,1)
+var h7C=_v()
+_(r,h7C)
 cs.push("./pages/shouruTJ/shouruTJ.wxml:template:2:6")
-var c9C=_oz(z,1,e,s,gg)
-var o0C=_gd(x[46],c9C,e_,d_)
-if(o0C){
-var lAD=_1z(z,0,e,s,gg) || {}
+var o8C=_oz(z,1,e,s,gg)
+var c9C=_gd(x[46],o8C,e_,d_)
+if(c9C){
+var o0C=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-o8C.wxXCkey=3
-o0C(lAD,lAD,o8C,gg)
+h7C.wxXCkey=3
+c9C(o0C,o0C,h7C,gg)
 gg.f=cur_globalf
 }
-else _w(c9C,x[46],2,18)
+else _w(o8C,x[46],2,18)
 cs.pop()
-h7C.pop()
+c6C.pop()
 return r
 }
 e_[x[46]]={f:m31,j:[],i:[],ti:[x[47]],ic:[]}
@@ -2417,23 +2414,23 @@ e_[x[48]]={f:m32,j:[],i:[],ti:[],ic:[]}
 d_[x[49]]={}
 var m33=function(e,s,r,gg){
 var z=gz$gwx_34()
-var eDD=e_[x[49]].i
-_ai(eDD,x[50],e_,x[49],1,1)
-var bED=_v()
-_(r,bED)
+var tCD=e_[x[49]].i
+_ai(tCD,x[50],e_,x[49],1,1)
+var eDD=_v()
+_(r,eDD)
 cs.push("./pages/userMsg/userMsg.wxml:template:2:6")
-var oFD=_oz(z,1,e,s,gg)
-var xGD=_gd(x[49],oFD,e_,d_)
-if(xGD){
-var oHD=_1z(z,0,e,s,gg) || {}
+var bED=_oz(z,1,e,s,gg)
+var oFD=_gd(x[49],bED,e_,d_)
+if(oFD){
+var xGD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-bED.wxXCkey=3
-xGD(oHD,oHD,bED,gg)
+eDD.wxXCkey=3
+oFD(xGD,xGD,eDD,gg)
 gg.f=cur_globalf
 }
-else _w(oFD,x[49],2,18)
+else _w(bED,x[49],2,18)
 cs.pop()
-eDD.pop()
+tCD.pop()
 return r
 }
 e_[x[49]]={f:m33,j:[],i:[],ti:[x[50]],ic:[]}
@@ -2461,23 +2458,23 @@ e_[x[51]]={f:m34,j:[],i:[],ti:[],ic:[]}
 d_[x[52]]={}
 var m35=function(e,s,r,gg){
 var z=gz$gwx_36()
-var hKD=e_[x[52]].i
-_ai(hKD,x[53],e_,x[52],1,1)
-var oLD=_v()
-_(r,oLD)
+var cJD=e_[x[52]].i
+_ai(cJD,x[53],e_,x[52],1,1)
+var hKD=_v()
+_(r,hKD)
 cs.push("./pages/user_center/user_center.wxml:template:2:6")
-var cMD=_oz(z,1,e,s,gg)
-var oND=_gd(x[52],cMD,e_,d_)
-if(oND){
-var lOD=_1z(z,0,e,s,gg) || {}
+var oLD=_oz(z,1,e,s,gg)
+var cMD=_gd(x[52],oLD,e_,d_)
+if(cMD){
+var oND=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oLD.wxXCkey=3
-oND(lOD,lOD,oLD,gg)
+hKD.wxXCkey=3
+cMD(oND,oND,hKD,gg)
 gg.f=cur_globalf
 }
-else _w(cMD,x[52],2,18)
+else _w(oLD,x[52],2,18)
 cs.pop()
-hKD.pop()
+cJD.pop()
 return r
 }
 e_[x[52]]={f:m35,j:[],i:[],ti:[x[53]],ic:[]}
@@ -2505,23 +2502,23 @@ e_[x[54]]={f:m36,j:[],i:[],ti:[],ic:[]}
 d_[x[55]]={}
 var m37=function(e,s,r,gg){
 var z=gz$gwx_38()
-var eRD=e_[x[55]].i
-_ai(eRD,x[56],e_,x[55],1,1)
-var bSD=_v()
-_(r,bSD)
+var tQD=e_[x[55]].i
+_ai(tQD,x[56],e_,x[55],1,1)
+var eRD=_v()
+_(r,eRD)
 cs.push("./pages/wjPassword/wjPassword.wxml:template:2:6")
-var oTD=_oz(z,1,e,s,gg)
-var xUD=_gd(x[55],oTD,e_,d_)
-if(xUD){
-var oVD=_1z(z,0,e,s,gg) || {}
+var bSD=_oz(z,1,e,s,gg)
+var oTD=_gd(x[55],bSD,e_,d_)
+if(oTD){
+var xUD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-bSD.wxXCkey=3
-xUD(oVD,oVD,bSD,gg)
+eRD.wxXCkey=3
+oTD(xUD,xUD,eRD,gg)
 gg.f=cur_globalf
 }
-else _w(oTD,x[55],2,18)
+else _w(bSD,x[55],2,18)
 cs.pop()
-eRD.pop()
+tQD.pop()
 return r
 }
 e_[x[55]]={f:m37,j:[],i:[],ti:[x[56]],ic:[]}
@@ -2549,23 +2546,23 @@ e_[x[57]]={f:m38,j:[],i:[],ti:[],ic:[]}
 d_[x[58]]={}
 var m39=function(e,s,r,gg){
 var z=gz$gwx_40()
-var hYD=e_[x[58]].i
-_ai(hYD,x[59],e_,x[58],1,1)
-var oZD=_v()
-_(r,oZD)
+var cXD=e_[x[58]].i
+_ai(cXD,x[59],e_,x[58],1,1)
+var hYD=_v()
+_(r,hYD)
 cs.push("./pages/xiaolingTJ/xiaolingTJ.wxml:template:2:6")
-var c1D=_oz(z,1,e,s,gg)
-var o2D=_gd(x[58],c1D,e_,d_)
-if(o2D){
-var l3D=_1z(z,0,e,s,gg) || {}
+var oZD=_oz(z,1,e,s,gg)
+var c1D=_gd(x[58],oZD,e_,d_)
+if(c1D){
+var o2D=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oZD.wxXCkey=3
-o2D(l3D,l3D,oZD,gg)
+hYD.wxXCkey=3
+c1D(o2D,o2D,hYD,gg)
 gg.f=cur_globalf
 }
-else _w(c1D,x[58],2,18)
+else _w(oZD,x[58],2,18)
 cs.pop()
-hYD.pop()
+cXD.pop()
 return r
 }
 e_[x[58]]={f:m39,j:[],i:[],ti:[x[59]],ic:[]}
@@ -3051,7 +3048,7 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");\nvar echarts = _interopRequireWildcard(__webpack_require__(/*! @/components/echarts/echarts.simple.min.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\components\\\\echarts\\\\echarts.simple.min.js\"));\nvar _echarts = _interopRequireDefault(__webpack_require__(/*! @/components/echarts/echarts.vue */ \"D:\\\\西港项目\\\\newUni-app_2\\\\components\\\\echarts\\\\echarts.vue\"));\nvar _index = __webpack_require__(/*! @/request/API/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\request\\\\API\\\\index.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _interopRequireWildcard(obj) {if (obj && obj.__esModule) {return obj;} else {var newObj = {};if (obj != null) {for (var key in obj) {if (Object.prototype.hasOwnProperty.call(obj, key)) {var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {};if (desc.get || desc.set) {Object.defineProperty(newObj, key, desc);} else {newObj[key] = obj[key];}}}}newObj.default = obj;return newObj;}}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}\nvar cityList = [\n{\n  value: 55,\n  name: '北京' },\n\n{\n  value: 38,\n  name: '上海' },\n\n{\n  value: 20,\n  name: '广州' }];\n\n\n\nvar pieOption = {\n  animation: false,\n  backgroundColor: '#F8F8F8',\n  color: ['#37A2DA', '#32C5E9', '#67E0E3', '#91F2DE', '#FFDB5C', '#FF9F7F'],\n  series: [\n  {\n    label: {\n      normal: {\n        fontSize: 14 } },\n\n\n    type: 'pie',\n    center: ['50%', '50%'],\n    radius: [0, '60%'],\n    data: [],\n    itemStyle: {\n      emphasis: {\n        shadowBlur: 10,\n        shadowOffsetX: 0,\n        shadowColor: 'rgba(0, 2, 2, 0.3)' } } }] };\n\n\n\n\n\nvar option = {\n  xAxis: {\n    type: 'category',\n    data: [],\n    axisLabel: {\n      rotate: 40 //倾斜度\n    } },\n\n  yAxis: {\n    type: 'value',\n    splitArea: {\n      show: true },\n\n    name: '销售金额(元)' // 轴名称\n  },\n  series: [\n  {\n    data: [],\n    type: 'bar',\n    barWidth: 30 }] };\n\n\n\nvar lineOption = {\n  animation: false,\n  color: ['#37A2DA', '#9FE6B8'],\n  grid: {\n    x: 35,\n    x2: 10,\n    y: 30,\n    y2: 25 },\n\n  calculable: false,\n  xAxis: [\n  {\n    type: 'category',\n    data: [] }],\n\n\n  yAxis: [\n  {\n    type: 'value',\n    splitArea: {\n      show: true },\n\n    name: '销售金额(元)' // 轴名称\n  }],\n\n  series: [\n  {\n    name: '蒸发量',\n    type: 'line',\n    data: [] }] };var _default =\n\n\n\n{\n  data: function data() {\n    return {\n      tab: 1, //默认柱状图\n      dateType: 0, //统计类型 0-日报表/1-月报表/2-季报表/3-年报表(默认传0)\n      startTime: '', //开始时间\n      endTime: '', //结束时间\n      currentTabs: 0,\n      echarts: echarts };\n\n  },\n  components: {\n    mpvueEcharts: _echarts.default },\n\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['userId', 'shopId'])),\n\n  onLoad: function onLoad() {\n    var userId = uni.getStorageSync('userId');\n    var token = uni.getStorageSync('token');\n    var shopId = uni.getStorageSync('shopId');\n    if (userId) {\n      this.$store.commit('SET_SHOPID', shopId);\n      this.$store.commit('SET_USERID', userId);\n      this.$store.commit('SET_TOKEN', token);\n    } else {\n      uni.reLaunch({\n        url: '/pages/logn/logn' });\n\n    }\n    this.startTime = this.getNowFormatDate();\n    if (this.tab == 1) {\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      this.getMoneyAnalysisByShopId(this.shopId, this.dateType, this.startTime, this.endTime);\n    }\n  },\n  methods: {\n    //折线\n    zhexian: function zhexian() {var _this = this;\n      this.tab = 3;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion = true;var _didIteratorError = false;var _iteratorError = undefined;try {\n            for (var _iterator = res.data.data[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {var item = _step.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              lineOption.xAxis[0].data.push(params);\n              lineOption.series[0].data.push(params2);\n              _this.$refs.lineChart.init();\n            }} catch (err) {_didIteratorError = true;_iteratorError = err;} finally {try {if (!_iteratorNormalCompletion && _iterator.return != null) {_iterator.return();}} finally {if (_didIteratorError) {throw _iteratorError;}}}\n        }\n      });\n    },\n    //饼\n    bing: function bing() {var _this2 = this;\n      this.tab = 2;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion2 = true;var _didIteratorError2 = false;var _iteratorError2 = undefined;try {\n            for (var _iterator2 = res.data.data[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {var item = _step2.value;\n              var params = {\n                name: item.dateTime,\n                value: item.saleMoney };\n\n              pieOption.series[0].data.push(params);\n              _this2.$refs.pieChart.init();\n            }} catch (err) {_didIteratorError2 = true;_iteratorError2 = err;} finally {try {if (!_iteratorNormalCompletion2 && _iterator2.return != null) {_iterator2.return();}} finally {if (_didIteratorError2) {throw _iteratorError2;}}}\n        }\n      });\n    },\n    //柱状图数据\n    zhutu: function zhutu() {var _this3 = this;\n      this.tab = 1;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion3 = true;var _didIteratorError3 = false;var _iteratorError3 = undefined;try {\n            for (var _iterator3 = res.data.data[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {var item = _step3.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this3.$refs.barChart.init();\n            }} catch (err) {_didIteratorError3 = true;_iteratorError3 = err;} finally {try {if (!_iteratorNormalCompletion3 && _iterator3.return != null) {_iterator3.return();}} finally {if (_didIteratorError3) {throw _iteratorError3;}}}\n        }\n      });\n    },\n    //默认进来获取柱状图报表\n    getMoneyAnalysisByShopId: function getMoneyAnalysisByShopId(shopId, dateType, startTime, endTime) {var _this4 = this;\n      (0, _index.getMoneyAnalysisByShopId)(shopId, dateType, startTime, endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion4 = true;var _didIteratorError4 = false;var _iteratorError4 = undefined;try {\n            for (var _iterator4 = res.data.data[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {var item = _step4.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this4.$refs.barChart.init();\n            }} catch (err) {_didIteratorError4 = true;_iteratorError4 = err;} finally {try {if (!_iteratorNormalCompletion4 && _iterator4.return != null) {_iterator4.return();}} finally {if (_didIteratorError4) {throw _iteratorError4;}}}\n        }\n      });\n    },\n    bindPickerChange: function bindPickerChange(res) {var _this5 = this;\n      this.startTime = res.detail.value;\n      this.tab = 1;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [0];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion5 = true;var _didIteratorError5 = false;var _iteratorError5 = undefined;try {\n            for (var _iterator5 = res.data.data[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {var item = _step5.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this5.$refs.barChart.init();\n            }} catch (err) {_didIteratorError5 = true;_iteratorError5 = err;} finally {try {if (!_iteratorNormalCompletion5 && _iterator5.return != null) {_iterator5.return();}} finally {if (_didIteratorError5) {throw _iteratorError5;}}}\n        }\n      });\n    },\n    bindPickerChange2: function bindPickerChange2(res) {var _this6 = this;\n      this.endTime = res.detail.value;\n      this.tab = 1;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [0];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion6 = true;var _didIteratorError6 = false;var _iteratorError6 = undefined;try {\n            for (var _iterator6 = res.data.data[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {var item = _step6.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this6.$refs.barChart.init();\n            }} catch (err) {_didIteratorError6 = true;_iteratorError6 = err;} finally {try {if (!_iteratorNormalCompletion6 && _iterator6.return != null) {_iterator6.return();}} finally {if (_didIteratorError6) {throw _iteratorError6;}}}\n        }\n      });\n    },\n    //获取当前时间，格式YYYY-MM-DD\n    getNowFormatDate: function getNowFormatDate() {\n      var date = new Date();\n      var seperator1 = '-';\n      var year = date.getFullYear();\n      var month = date.getMonth() + 1;\n      var strDate = date.getDate();\n      if (month >= 1 && month <= 9) {\n        month = '0' + month;\n      }\n      if (strDate >= 0 && strDate <= 9) {\n        strDate = '0' + strDate;\n      }\n      var currentdate = year + seperator1 + month + seperator1 + strDate;\n      return currentdate;\n    },\n    //饼图\n    pieInit: function pieInit(canvas, width, height) {\n      var pieChart = echarts.init(canvas, null, {\n        width: width,\n        height: height });\n\n      canvas.setChart(pieChart);\n\n      pieChart.setOption(pieOption);\n      return pieChart;\n    },\n    //折线\n    lineInit: function lineInit(canvas, width, height) {\n      var lineChart = echarts.init(canvas, null, {\n        width: width,\n        height: height });\n\n      canvas.setChart(lineChart);\n\n      lineChart.setOption(lineOption);\n      return lineChart;\n    },\n    //柱状图\n    barInit: function barInit(canvas, width, height) {\n      var barChart = echarts.init(canvas, null, {\n        width: width,\n        height: height });\n\n      canvas.setChart(barChart);\n\n      barChart.setOption(option);\n      return barChart;\n    },\n    tabs: function tabs(i) {var _this7 = this;\n      this.currentTabs = i;\n      this.tab = 1;\n      this.dateType = i;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion7 = true;var _didIteratorError7 = false;var _iteratorError7 = undefined;try {\n            for (var _iterator7 = res.data.data[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {var item = _step7.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this7.$refs.barChart.init();\n            }} catch (err) {_didIteratorError7 = true;_iteratorError7 = err;} finally {try {if (!_iteratorNormalCompletion7 && _iterator7.return != null) {_iterator7.return();}} finally {if (_didIteratorError7) {throw _iteratorError7;}}}\n        }\n      });\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/index/index.vue?vue&type=script&lang=js&?e400");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");\nvar echarts = _interopRequireWildcard(__webpack_require__(/*! @/components/echarts/echarts.simple.min.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\components\\\\echarts\\\\echarts.simple.min.js\"));\nvar _echarts = _interopRequireDefault(__webpack_require__(/*! @/components/echarts/echarts.vue */ \"D:\\\\西港项目\\\\newUni-app_2\\\\components\\\\echarts\\\\echarts.vue\"));\nvar _index = __webpack_require__(/*! @/request/API/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\request\\\\API\\\\index.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _interopRequireWildcard(obj) {if (obj && obj.__esModule) {return obj;} else {var newObj = {};if (obj != null) {for (var key in obj) {if (Object.prototype.hasOwnProperty.call(obj, key)) {var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {};if (desc.get || desc.set) {Object.defineProperty(newObj, key, desc);} else {newObj[key] = obj[key];}}}}newObj.default = obj;return newObj;}}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}\nvar cityList = [\n{\n  value: 55,\n  name: '北京' },\n\n{\n  value: 38,\n  name: '上海' },\n\n{\n  value: 20,\n  name: '广州' }];\n\n\n\nvar pieOption = {\n  animation: false,\n  backgroundColor: '#F8F8F8',\n  color: ['#37A2DA', '#32C5E9', '#67E0E3', '#91F2DE', '#FFDB5C', '#FF9F7F'],\n  series: [\n  {\n    label: {\n      normal: {\n        fontSize: 14 } },\n\n\n    type: 'pie',\n    center: ['50%', '50%'],\n    radius: [0, '60%'],\n    data: [],\n    itemStyle: {\n      emphasis: {\n        shadowBlur: 10,\n        shadowOffsetX: 0,\n        shadowColor: 'rgba(0, 2, 2, 0.3)' } } }] };\n\n\n\n\n\nvar option = {\n  xAxis: {\n    type: 'category',\n    data: [],\n    axisLabel: {\n      rotate: 40 //倾斜度\n    } },\n\n  yAxis: {\n    type: 'value',\n    splitArea: {\n      show: true },\n\n    name: '销售金额(元)' // 轴名称\n  },\n  series: [\n  {\n    data: [],\n    type: 'bar',\n    barWidth: 30 }] };\n\n\n\nvar lineOption = {\n  animation: false,\n  color: ['#37A2DA', '#9FE6B8'],\n  grid: {\n    x: 35,\n    x2: 10,\n    y: 30,\n    y2: 25 },\n\n  calculable: false,\n  xAxis: [\n  {\n    type: 'category',\n    data: [] }],\n\n\n  yAxis: [\n  {\n    type: 'value',\n    splitArea: {\n      show: true },\n\n    name: '销售金额(元)' // 轴名称\n  }],\n\n  series: [\n  {\n    name: '蒸发量',\n    type: 'line',\n    data: [] }] };var _default =\n\n\n\n{\n  data: function data() {\n    return {\n      version: '', //版本号\n      tab: 1, //默认柱状图\n      dateType: 0, //统计类型 0-日报表/1-月报表/2-季报表/3-年报表(默认传0)\n      startTime: '', //开始时间\n      endTime: '', //结束时间\n      currentTabs: 0,\n      echarts: echarts };\n\n  },\n  components: {\n    mpvueEcharts: _echarts.default },\n\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['userId', 'shopId'])),\n\n  onLoad: function onLoad() {var _this = this;\n    var userId = uni.getStorageSync('userId');\n    var token = uni.getStorageSync('token');\n    var shopId = uni.getStorageSync('shopId');\n    if (userId) {\n      this.$store.commit('SET_SHOPID', shopId);\n      this.$store.commit('SET_USERID', userId);\n      this.$store.commit('SET_TOKEN', token);\n    } else {\n      uni.reLaunch({\n        url: '/pages/logn/logn' });\n\n    }\n    this.startTime = this.getNowFormatDate();\n    if (this.tab == 1) {\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      this.getMoneyAnalysisByShopId(this.shopId, this.dateType, this.startTime, this.endTime);\n    }\n    //检查版本更新\n    this.version = plus.runtime.version;\n    uni.getSystemInfo({\n      success: function success(res) {\n        console.log(res.platform);\n        //检测当前平台，如果是安卓则启动安卓更新\n        if (res.platform == 'android') {\n          _this.AndroidCheckUpdate();\n        }\n      } });\n\n  },\n  methods: {\n    //检查版本更新\n    AndroidCheckUpdate: function AndroidCheckUpdate() {var _this2 = this;\n      uni.request({\n        url: 'http://114.115.211.170:8018/system/version/getNewVersionNumber?type=2',\n        method: 'GET',\n        data: {},\n        success: function success(res) {\n          console.log(res.data.data);\n          console.log(_this2.version);\n          if (res.data.data > _this2.version) {\n            if (plus.networkinfo.getCurrentType() != 3) {\n              uni.showToast({\n                title: '有新的版本发布，检测到您目前非Wifi连接，为节约您的流量，程序已停止自动更新，将在您连接WIFI之后重新检测更新。',\n                mask: false,\n                duration: 7000,\n                icon: 'none' });\n\n              return;\n            }\n            uni.showToast({\n              title: '有新的版本发布，检测到您目前为Wifi连接，程序已启动自动更新。新版本下载完成后将自动弹出安装程序。',\n              mask: false,\n              duration: 7000,\n              icon: 'none' });\n\n            var dtask = plus.downloader.createDownload('http://114.115.211.170:8008/app/shanghu.apk', {}, function (d, status) {\n              // 下载完成\n              if (status == 200) {\n                plus.runtime.install(plus.io.convertLocalFileSystemURL(d.filename), {}, {}, function (error) {\n                  uni.showToast({\n                    title: '安装失败',\n                    mask: false,\n                    icon: 'none',\n                    duration: 1500 });\n\n                });\n              } else {\n                uni.showToast({\n                  title: '更新失败',\n                  mask: false,\n                  icon: 'none',\n                  duration: 1500 });\n\n              }\n            });\n            dtask.start();\n          }\n        },\n        fail: function fail() {},\n        complete: function complete() {} });\n\n    },\n    //折线\n    zhexian: function zhexian() {var _this3 = this;\n      this.tab = 3;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion = true;var _didIteratorError = false;var _iteratorError = undefined;try {\n            for (var _iterator = res.data.data[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {var item = _step.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              lineOption.xAxis[0].data.push(params);\n              lineOption.series[0].data.push(params2);\n              _this3.$refs.lineChart.init();\n            }} catch (err) {_didIteratorError = true;_iteratorError = err;} finally {try {if (!_iteratorNormalCompletion && _iterator.return != null) {_iterator.return();}} finally {if (_didIteratorError) {throw _iteratorError;}}}\n        }\n      });\n    },\n    //饼\n    bing: function bing() {var _this4 = this;\n      this.tab = 2;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion2 = true;var _didIteratorError2 = false;var _iteratorError2 = undefined;try {\n            for (var _iterator2 = res.data.data[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {var item = _step2.value;\n              var params = {\n                name: item.dateTime,\n                value: item.saleMoney };\n\n              pieOption.series[0].data.push(params);\n              _this4.$refs.pieChart.init();\n            }} catch (err) {_didIteratorError2 = true;_iteratorError2 = err;} finally {try {if (!_iteratorNormalCompletion2 && _iterator2.return != null) {_iterator2.return();}} finally {if (_didIteratorError2) {throw _iteratorError2;}}}\n        }\n      });\n    },\n    //柱状图数据\n    zhutu: function zhutu() {var _this5 = this;\n      this.tab = 1;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion3 = true;var _didIteratorError3 = false;var _iteratorError3 = undefined;try {\n            for (var _iterator3 = res.data.data[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {var item = _step3.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this5.$refs.barChart.init();\n            }} catch (err) {_didIteratorError3 = true;_iteratorError3 = err;} finally {try {if (!_iteratorNormalCompletion3 && _iterator3.return != null) {_iterator3.return();}} finally {if (_didIteratorError3) {throw _iteratorError3;}}}\n        }\n      });\n    },\n    //默认进来获取柱状图报表\n    getMoneyAnalysisByShopId: function getMoneyAnalysisByShopId(shopId, dateType, startTime, endTime) {var _this6 = this;\n      (0, _index.getMoneyAnalysisByShopId)(shopId, dateType, startTime, endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion4 = true;var _didIteratorError4 = false;var _iteratorError4 = undefined;try {\n            for (var _iterator4 = res.data.data[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {var item = _step4.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this6.$refs.barChart.init();\n            }} catch (err) {_didIteratorError4 = true;_iteratorError4 = err;} finally {try {if (!_iteratorNormalCompletion4 && _iterator4.return != null) {_iterator4.return();}} finally {if (_didIteratorError4) {throw _iteratorError4;}}}\n        }\n      });\n    },\n    bindPickerChange: function bindPickerChange(res) {var _this7 = this;\n      this.startTime = res.detail.value;\n      this.tab = 1;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [0];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion5 = true;var _didIteratorError5 = false;var _iteratorError5 = undefined;try {\n            for (var _iterator5 = res.data.data[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {var item = _step5.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this7.$refs.barChart.init();\n            }} catch (err) {_didIteratorError5 = true;_iteratorError5 = err;} finally {try {if (!_iteratorNormalCompletion5 && _iterator5.return != null) {_iterator5.return();}} finally {if (_didIteratorError5) {throw _iteratorError5;}}}\n        }\n      });\n    },\n    bindPickerChange2: function bindPickerChange2(res) {var _this8 = this;\n      this.endTime = res.detail.value;\n      this.tab = 1;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [0];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion6 = true;var _didIteratorError6 = false;var _iteratorError6 = undefined;try {\n            for (var _iterator6 = res.data.data[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {var item = _step6.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this8.$refs.barChart.init();\n            }} catch (err) {_didIteratorError6 = true;_iteratorError6 = err;} finally {try {if (!_iteratorNormalCompletion6 && _iterator6.return != null) {_iterator6.return();}} finally {if (_didIteratorError6) {throw _iteratorError6;}}}\n        }\n      });\n    },\n    //获取当前时间，格式YYYY-MM-DD\n    getNowFormatDate: function getNowFormatDate() {\n      var date = new Date();\n      var seperator1 = '-';\n      var year = date.getFullYear();\n      var month = date.getMonth() + 1;\n      var strDate = date.getDate();\n      if (month >= 1 && month <= 9) {\n        month = '0' + month;\n      }\n      if (strDate >= 0 && strDate <= 9) {\n        strDate = '0' + strDate;\n      }\n      var currentdate = year + seperator1 + month + seperator1 + strDate;\n      return currentdate;\n    },\n    //饼图\n    pieInit: function pieInit(canvas, width, height) {\n      var pieChart = echarts.init(canvas, null, {\n        width: width,\n        height: height });\n\n      canvas.setChart(pieChart);\n\n      pieChart.setOption(pieOption);\n      return pieChart;\n    },\n    //折线\n    lineInit: function lineInit(canvas, width, height) {\n      var lineChart = echarts.init(canvas, null, {\n        width: width,\n        height: height });\n\n      canvas.setChart(lineChart);\n\n      lineChart.setOption(lineOption);\n      return lineChart;\n    },\n    //柱状图\n    barInit: function barInit(canvas, width, height) {\n      var barChart = echarts.init(canvas, null, {\n        width: width,\n        height: height });\n\n      canvas.setChart(barChart);\n\n      barChart.setOption(option);\n      return barChart;\n    },\n    tabs: function tabs(i) {var _this9 = this;\n      this.currentTabs = i;\n      this.tab = 1;\n      this.dateType = i;\n      pieOption.series[0].data = [];\n      lineOption.xAxis[0].data = [];\n      lineOption.series[0].data = [];\n      option.xAxis.data = [];\n      option.series[0].data = [];\n      (0, _index.getMoneyAnalysisByShopId)(this.shopId, this.dateType, this.startTime, this.endTime).then(function (res) {\n        if (res.data.code == 0) {var _iteratorNormalCompletion7 = true;var _didIteratorError7 = false;var _iteratorError7 = undefined;try {\n            for (var _iterator7 = res.data.data[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {var item = _step7.value;\n              var params = item.dateTime;\n              var params2 = item.saleMoney;\n              option.xAxis.data.push(params);\n              option.series[0].data.push(params2);\n              _this9.$refs.barChart.init();\n            }} catch (err) {_didIteratorError7 = true;_iteratorError7 = err;} finally {try {if (!_iteratorNormalCompletion7 && _iterator7.return != null) {_iterator7.return();}} finally {if (_didIteratorError7) {throw _iteratorError7;}}}\n        }\n      });\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/index/index.vue?vue&type=script&lang=js&?e400");
 
 /***/ }),
 
@@ -3455,7 +3452,7 @@ define('pages/shop_administration/shop_administration.js',function(require, modu
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _index = __webpack_require__(/*! ../../common/config/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\common\\\\config\\\\index.js\");\nvar _index2 = __webpack_require__(/*! @/request/API/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\request\\\\API\\\\index.js\");\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError(\"Invalid attempt to spread non-iterable instance\");}function _iterableToArray(iter) {if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) {for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {arr2[i] = arr[i];}return arr2;}}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n{\n  data: function data() {\n    return {\n      imgURl: '',\n      currentTabs: 0,\n      img: '',\n      shopName: '',\n      phone: '',\n      shopDesc: '',\n      shopAddress: '',\n      shopLogo: '',\n      pageNo: 1,\n      commentList: [] };\n\n  },\n  onShow: function onShow() {\n    this.imgURl = _index.imgURl;\n    this.getShopInfoById();\n    this.getCommentByShopId(this.pageNo, 10, this.shopId);\n  },\n  //上拉加载\n  onReachBottom: function onReachBottom() {\n    if (this.search == '') {\n      this.pageNo++;\n      this.getCommentByShopId(this.pageNo, 10, this.shopId);\n    }\n  },\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['userId', 'shopId'])),\n\n  methods: {\n    getCommentByShopId: function getCommentByShopId(pageNo, pageSize, shopId) {var _this = this;\n      (0, _index2.getCommentByShopId)(pageNo, pageSize, shopId).then(function (res) {\n        if (res.data.code == 0) {\n          if (res.data.data.list.length == 0) {\n            uni.showToast({\n              title: '没有更多数据了',\n              icon: 'none',\n              duration: 1000 });\n\n          }\n          _this.commentList = [].concat(_toConsumableArray(_this.commentList), _toConsumableArray(res.data.data.list));\n        }\n      });\n    },\n    getShopInfoById: function getShopInfoById() {var _this2 = this;\n      (0, _index2.getShopInfoById)(this.shopId).then(function (res) {\n        if (res.data.code == 0) {\n          _this2.shopName = res.data.data.shopName,\n          _this2.phone = res.data.data.phone,\n          _this2.shopDesc = res.data.data.shopDesc,\n          _this2.shopAddress = res.data.data.shopAddress;\n        }\n      });\n    },\n    save: function save() {var _this3 = this;\n      if (!this.shopLogo) {\n        uni.showModal({\n          title: '',\n          content: '请上传店铺logo图片',\n          showCancel: false });\n\n        return;\n      }\n      if (!this.shopName) {\n        uni.showModal({\n          title: '',\n          content: '请输入店铺名称',\n          showCancel: false });\n\n        return;\n      }\n\n      if (!this.shopAddress) {\n        uni.showModal({\n          title: '',\n          content: '请输入您的店铺地址',\n          showCancel: false });\n\n        return;\n      }\n\n      var reg = /^[1][3,4,5,7,8][0-9]{9}$/;\n      if (!reg.test(this.phone)) {\n        uni.showModal({\n          title: '',\n          content: '请输入正确的手机号码',\n          showCancel: false });\n\n        return;\n      }\n      if (!this.shopDesc) {\n        uni.showModal({\n          title: '',\n          content: '请描述您的店铺信息',\n          showCancel: false });\n\n        return;\n      }\n      var params = {\n        userId: this.userId,\n        phone: this.phone,\n        shopName: this.shopName,\n        shopDesc: this.shopDesc,\n        shopAddress: this.shopAddress,\n        shopLogo: this.shopLogo };\n\n      (0, _index2.addShopInfo)(params).then(function (res) {\n        if (res.data.code == 0) {\n          uni.setStorageSync('shopId', res.data.data.shop.id);\n          _this3.$store.commit('SET_SHOPID', res.data.data.shop.id);\n          uni.showToast({\n            title: '保存成功' });\n\n        }\n      });\n    },\n    tabs: function tabs(i) {\n      this.currentTabs = i;\n    },\n    paizhao: function paizhao() {var _this4 = this;\n      uni.chooseImage({\n        count: 1, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          _this4.img = res.tempFilePaths[0];\n          uni.uploadFile({\n            url: _index.baseURL + '/file/upload',\n            filePath: res.tempFilePaths[0],\n            name: 'file',\n            formData: {\n              user: 'test',\n              file: res.tempFilePaths[0] },\n\n            success: function success(uploadFileRes) {\n              var aaa = JSON.parse(uploadFileRes.data);\n              if (aaa.code == 0) {\n                console.log(uploadFileRes);\n                _this4.shopLogo = aaa.data;\n                uni.showToast({\n                  title: '上传成功' });\n\n              }\n            } });\n\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/shop_administration/shop_administration.vue?vue&type=script&lang=js&?301d");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _index = __webpack_require__(/*! ../../common/config/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\common\\\\config\\\\index.js\");\nvar _index2 = __webpack_require__(/*! @/request/API/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\request\\\\API\\\\index.js\");\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError(\"Invalid attempt to spread non-iterable instance\");}function _iterableToArray(iter) {if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) {for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {arr2[i] = arr[i];}return arr2;}}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n{\n  data: function data() {\n    return {\n      imgURl: '',\n      currentTabs: 0,\n      img: '',\n      shopName: '',\n      phone: '',\n      shopDesc: '',\n      shopAddress: '',\n      shopLogo: '',\n      pageNo: 1,\n      commentList: [] };\n\n  },\n  onShow: function onShow() {\n    this.commentList = [];\n    this.imgURl = _index.imgURl;\n    this.getShopInfoById();\n    this.getCommentByShopId(this.pageNo, 10, this.shopId);\n  },\n  //上拉加载\n  onReachBottom: function onReachBottom() {\n    if (this.search == '') {\n      this.pageNo++;\n      this.getCommentByShopId(this.pageNo, 10, this.shopId);\n    }\n  },\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['userId', 'shopId'])),\n\n  methods: {\n    getCommentByShopId: function getCommentByShopId(pageNo, pageSize, shopId) {var _this = this;\n      (0, _index2.getCommentByShopId)(pageNo, pageSize, shopId).then(function (res) {\n        if (res.data.code == 0) {\n          if (res.data.data.list.length == 0) {\n            uni.showToast({\n              title: '没有更多数据了',\n              icon: 'none',\n              duration: 1000 });\n\n          }\n          _this.commentList = [].concat(_toConsumableArray(_this.commentList), _toConsumableArray(res.data.data.list));\n        }\n      });\n    },\n    getShopInfoById: function getShopInfoById() {var _this2 = this;\n      (0, _index2.getShopInfoById)(this.shopId).then(function (res) {\n        if (res.data.code == 0) {\n          _this2.shopName = res.data.data.shopName,\n          _this2.phone = res.data.data.phone,\n          _this2.shopDesc = res.data.data.shopDesc,\n          _this2.shopAddress = res.data.data.shopAddress;\n        }\n      });\n    },\n    save: function save() {var _this3 = this;\n      if (!this.shopLogo) {\n        uni.showModal({\n          title: '',\n          content: '请上传店铺logo图片',\n          showCancel: false });\n\n        return;\n      }\n      if (!this.shopName) {\n        uni.showModal({\n          title: '',\n          content: '请输入店铺名称',\n          showCancel: false });\n\n        return;\n      }\n\n      if (!this.shopAddress) {\n        uni.showModal({\n          title: '',\n          content: '请输入您的店铺地址',\n          showCancel: false });\n\n        return;\n      }\n\n      var reg = /^[1][3,4,5,7,8][0-9]{9}$/;\n      if (!reg.test(this.phone)) {\n        uni.showModal({\n          title: '',\n          content: '请输入正确的手机号码',\n          showCancel: false });\n\n        return;\n      }\n      if (!this.shopDesc) {\n        uni.showModal({\n          title: '',\n          content: '请描述您的店铺信息',\n          showCancel: false });\n\n        return;\n      }\n      var params = {\n        userId: this.userId,\n        phone: this.phone,\n        shopName: this.shopName,\n        shopDesc: this.shopDesc,\n        shopAddress: this.shopAddress,\n        shopLogo: this.shopLogo };\n\n      (0, _index2.addShopInfo)(params).then(function (res) {\n        if (res.data.code == 0) {\n          uni.setStorageSync('shopId', res.data.data.shop.id);\n          _this3.$store.commit('SET_SHOPID', res.data.data.shop.id);\n          uni.showToast({\n            title: '保存成功' });\n\n        }\n      });\n    },\n    tabs: function tabs(i) {\n      this.currentTabs = i;\n    },\n    paizhao: function paizhao() {var _this4 = this;\n      uni.chooseImage({\n        count: 1, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          _this4.img = res.tempFilePaths[0];\n          uni.uploadFile({\n            url: _index.baseURL + '/file/upload',\n            filePath: res.tempFilePaths[0],\n            name: 'file',\n            formData: {\n              user: 'test',\n              file: res.tempFilePaths[0] },\n\n            success: function success(uploadFileRes) {\n              var aaa = JSON.parse(uploadFileRes.data);\n              if (aaa.code == 0) {\n                console.log(uploadFileRes);\n                _this4.shopLogo = aaa.data;\n                uni.showToast({\n                  title: '上传成功' });\n\n              }\n            } });\n\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/shop_administration/shop_administration.vue?vue&type=script&lang=js&?301d");
 
 /***/ }),
 
@@ -3558,7 +3555,7 @@ define('pages/commodity_management/commodity_management.js',function(require, mo
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _index = __webpack_require__(/*! ../../common/config/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\common\\\\config\\\\index.js\");\nvar _index2 = __webpack_require__(/*! @/request/API/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\request\\\\API\\\\index.js\");\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError(\"Invalid attempt to spread non-iterable instance\");}function _iterableToArray(iter) {if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) {for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {arr2[i] = arr[i];}return arr2;}}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n{\n  data: function data() {\n    return {\n      shopStatus: -1,\n      imgURl: '',\n      productId: '',\n      productList: [], //商品列表\n      isShow: false,\n      pageNo: 1,\n      sortWay: 0 //价格排序方式 0升序 1降序\n    };\n  },\n  onShow: function onShow() {\n    if (this.shopId) {\n      this.imgURl = _index.imgURl;\n      this.getShopStatusByUserId(this.userId);\n      this.productList = [];\n      this.getProductByShopId(this.pageNo, 10, this.shopId, this.sortWay);\n    }\n  },\n  //上拉加载\n  onReachBottom: function onReachBottom() {\n    this.pageNo++;\n    this.getProductByShopId(this.pageNo, 10, this.shopId, this.sortWay);\n  },\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['userId', 'shopId'])),\n\n  methods: {\n    isShowChange2: function isShowChange2() {\n      this.isShow = false;\n    },\n    //获取用户入住状态\n    getShopStatusByUserId: function getShopStatusByUserId(userId) {var _this = this;\n      (0, _index2.getShopStatusByUserId)(userId).then(function (res) {\n        if (res.data.code == 0) {\n          _this.shopStatus = res.data.data.shopStatus;\n        }\n      });\n    },\n    //获取商品数据\n    getProductByShopId: function getProductByShopId(pageNo, pageSize, shopId, sortWay) {var _this2 = this;\n      (0, _index2.getProductByShopId)(pageNo, pageSize, shopId, sortWay).then(function (res) {\n        if (res.data.code == 0) {\n          if (res.data.data.list.length == 0) {\n            uni.showToast({\n              title: '没有更多数据了',\n              icon: 'none',\n              duration: 1000 });\n\n          }\n          _this2.productList = [].concat(_toConsumableArray(_this2.productList), _toConsumableArray(res.data.data.list));\n        }\n      });\n    },\n    isShowChange: function isShowChange(id) {\n      this.productId = id;\n      this.isShow = true;\n    },\n    //编辑\n    compile: function compile() {\n      this.isShow = false;\n      uni.navigateTo({\n        url: '/pages/addProduct/addProduct?id=' + this.productId });\n\n    },\n    //删除\n    Delete: function Delete() {var _this3 = this;\n      (0, _index2.delProductById)(this.productId).then(function (res) {\n        if (res.data.code == 0) {\n          uni.showToast({\n            title: '删除成功',\n            icon: 'none',\n            duration: 1000 });\n\n          _this3.productList = [];\n          _this3.getProductByShopId(_this3.pageNo, 10, _this3.shopId, _this3.sortWay);\n        }\n      });\n      this.isShow = false;\n    },\n    //上架\n    putaway: function putaway() {var _this4 = this;\n      var publishStatus = 1; //1上架\n      (0, _index2.shelvesProduct)(this.productId, publishStatus).then(function (res) {\n        if (res.data.code == 0) {\n          uni.showToast({\n            title: '上架成功',\n            icon: 'none',\n            duration: 1000 });\n\n          _this4.productList = [];\n          _this4.getProductByShopId(_this4.pageNo, 10, _this4.shopId, _this4.sortWay);\n        }\n      });\n      this.isShow = false;\n    },\n    //下架\n    soldOut: function soldOut() {var _this5 = this;\n      var publishStatus = 0; //0下架\n      (0, _index2.shelvesProduct)(this.productId, publishStatus).then(function (res) {\n        if (res.data.code == 0) {\n          uni.showToast({\n            title: '下架成功',\n            icon: 'none',\n            duration: 1000 });\n\n          _this5.productList = [];\n          _this5.getProductByShopId(_this5.pageNo, 10, _this5.shopId, _this5.sortWay);\n        }\n      });\n      this.isShow = false;\n    },\n    gotoAdd: function gotoAdd() {\n      if (this.shopStatus == -1) {\n        uni.showToast({\n          title: '还为入驻商家',\n          icon: 'none',\n          duration: 1000 });\n\n        return;\n      }\n      if (this.shopStatus == 0) {\n        uni.showToast({\n          title: '信息审核中',\n          icon: 'none',\n          duration: 1000 });\n\n        return;\n      }\n      if (this.shopStatus == 2) {\n        uni.showToast({\n          title: '商家入驻驳回，请重新入驻',\n          icon: 'none',\n          duration: 1000 });\n\n        return;\n      }\n      uni.navigateTo({\n        url: '/pages/addProduct/addProduct' });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/commodity_management/commodity_management.vue?vue&type=script&lang=js&?bb5c");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _index = __webpack_require__(/*! ../../common/config/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\common\\\\config\\\\index.js\");\nvar _index2 = __webpack_require__(/*! @/request/API/index.js */ \"D:\\\\西港项目\\\\newUni-app_2\\\\request\\\\API\\\\index.js\");\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError(\"Invalid attempt to spread non-iterable instance\");}function _iterableToArray(iter) {if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) {for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {arr2[i] = arr[i];}return arr2;}}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n{\n  data: function data() {\n    return {\n      shopStatus: -1,\n      imgURl: '',\n      productId: '',\n      productList: [], //商品列表\n      isShow: false,\n      pageNo: 1,\n      sortWay: 0 //价格排序方式 0升序 1降序\n    };\n  },\n  onShow: function onShow() {\n    if (this.shopId) {\n      this.imgURl = _index.imgURl;\n      this.getShopStatusByUserId(this.userId);\n      this.productList = [];\n      this.pageNo = 1;\n      this.getProductByShopId(this.pageNo, 10, this.shopId, this.sortWay);\n    }\n  },\n  //上拉加载\n  onReachBottom: function onReachBottom() {\n    this.pageNo++;\n    this.getProductByShopId(this.pageNo, 10, this.shopId, this.sortWay);\n  },\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['userId', 'shopId'])),\n\n  methods: {\n    isShowChange2: function isShowChange2() {\n      this.isShow = false;\n    },\n    //获取用户入住状态\n    getShopStatusByUserId: function getShopStatusByUserId(userId) {var _this = this;\n      (0, _index2.getShopStatusByUserId)(userId).then(function (res) {\n        if (res.data.code == 0) {\n          _this.shopStatus = res.data.data.shopStatus;\n        }\n      });\n    },\n    //获取商品数据\n    getProductByShopId: function getProductByShopId(pageNo, pageSize, shopId, sortWay) {var _this2 = this;\n      (0, _index2.getProductByShopId)(pageNo, pageSize, shopId, sortWay).then(function (res) {\n        if (res.data.code == 0) {\n          if (res.data.data.list.length == 0) {\n            uni.showToast({\n              title: '没有更多数据了',\n              icon: 'none',\n              duration: 1000 });\n\n          }\n          _this2.productList = [].concat(_toConsumableArray(_this2.productList), _toConsumableArray(res.data.data.list));\n        }\n      });\n    },\n    isShowChange: function isShowChange(id) {\n      this.productId = id;\n      this.isShow = true;\n    },\n    //编辑\n    compile: function compile() {\n      this.isShow = false;\n      uni.navigateTo({\n        url: '/pages/addProduct/addProduct?id=' + this.productId });\n\n    },\n    //删除\n    Delete: function Delete() {var _this3 = this;\n      (0, _index2.delProductById)(this.productId).then(function (res) {\n        if (res.data.code == 0) {\n          uni.showToast({\n            title: '删除成功',\n            icon: 'none',\n            duration: 1000 });\n\n          _this3.productList = [];\n          _this3.pageNo = 1;\n          _this3.getProductByShopId(_this3.pageNo, 10, _this3.shopId, _this3.sortWay);\n        }\n      });\n      this.isShow = false;\n    },\n    //上架\n    putaway: function putaway() {var _this4 = this;\n      var publishStatus = 1; //1上架\n      (0, _index2.shelvesProduct)(this.productId, publishStatus).then(function (res) {\n        if (res.data.code == 0) {\n          uni.showToast({\n            title: '上架成功',\n            icon: 'none',\n            duration: 1000 });\n\n          _this4.productList = [];\n          _this4.pageNo = 1;\n          _this4.getProductByShopId(_this4.pageNo, 10, _this4.shopId, _this4.sortWay);\n        }\n      });\n      this.isShow = false;\n    },\n    //下架\n    soldOut: function soldOut() {var _this5 = this;\n      var publishStatus = 0; //0下架\n      (0, _index2.shelvesProduct)(this.productId, publishStatus).then(function (res) {\n        if (res.data.code == 0) {\n          uni.showToast({\n            title: '下架成功',\n            icon: 'none',\n            duration: 1000 });\n\n          _this5.productList = [];\n          _this5.pageNo = 1;\n          _this5.getProductByShopId(_this5.pageNo, 10, _this5.shopId, _this5.sortWay);\n        }\n      });\n      this.isShow = false;\n    },\n    gotoAdd: function gotoAdd() {\n      if (this.shopStatus == -1) {\n        uni.showToast({\n          title: '还为入驻商家',\n          icon: 'none',\n          duration: 1000 });\n\n        return;\n      }\n      if (this.shopStatus == 0) {\n        uni.showToast({\n          title: '信息审核中',\n          icon: 'none',\n          duration: 1000 });\n\n        return;\n      }\n      if (this.shopStatus == 2) {\n        uni.showToast({\n          title: '商家入驻驳回，请重新入驻',\n          icon: 'none',\n          duration: 1000 });\n\n        return;\n      }\n      uni.navigateTo({\n        url: '/pages/addProduct/addProduct' });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/commodity_management/commodity_management.vue?vue&type=script&lang=js&?bb5c");
 
 /***/ }),
 
@@ -3890,7 +3887,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=D:/%E8%A5%BF%E6%B
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"content\" },\n    [\n      _c(\"view\", { staticClass: \"item3\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"头像:\")]),\n        _c(\n          \"view\",\n          {\n            staticClass: \"right\",\n            attrs: { eventid: \"71d77020-0\" },\n            on: { click: _vm.paizhao }\n          },\n          [\n            _vm.imglist2\n              ? _c(\"image\", {\n                  staticClass: \"tx\",\n                  attrs: { src: _vm.imglist2, mode: \"\" }\n                })\n              : _c(\"image\", {\n                  staticClass: \"tx\",\n                  attrs: { src: _vm.imgurl + _vm.imglist, mode: \"\" }\n                }),\n            _c(\"image\", {\n              staticClass: \"bq\",\n              attrs: { src: \"../../static/gengduo_41.png\", mode: \"\" }\n            })\n          ]\n        )\n      ]),\n      _c(\"view\", { staticClass: \"item\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"用户名:\")]),\n        _c(\"input\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.userinfo.name,\n              expression: \"userinfo.name\"\n            }\n          ],\n          attrs: {\n            type: \"text\",\n            placeholder: \"请输入用户名\",\n            eventid: \"71d77020-1\"\n          },\n          domProps: { value: _vm.userinfo.name },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.userinfo.name = $event.target.value\n            }\n          }\n        })\n      ]),\n      _c(\"view\", { staticClass: \"item\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"昵称:\")]),\n        _c(\"input\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.userinfo.nickName,\n              expression: \"userinfo.nickName\"\n            }\n          ],\n          attrs: {\n            type: \"text\",\n            value: \"\",\n            placeholder: \"请输入用户昵称\",\n            eventid: \"71d77020-2\"\n          },\n          domProps: { value: _vm.userinfo.nickName },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.userinfo.nickName = $event.target.value\n            }\n          }\n        })\n      ]),\n      _c(\"view\", { staticClass: \"item\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"电话:\")]),\n        _c(\"input\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.userinfo.userPhone,\n              expression: \"userinfo.userPhone\"\n            }\n          ],\n          attrs: {\n            type: \"number\",\n            value: \"\",\n            placeholder: \"请输入电话号码\",\n            disabled: \"true\",\n            eventid: \"71d77020-3\"\n          },\n          domProps: { value: _vm.userinfo.userPhone },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.userinfo.userPhone = $event.target.value\n            }\n          }\n        })\n      ]),\n      _c(\n        \"picker\",\n        {\n          attrs: { mode: \"selector\", range: _vm.range, eventid: \"71d77020-4\" },\n          on: { change: _vm.bindPickerChange }\n        },\n        [\n          _c(\"view\", { staticClass: \"item3\" }, [\n            _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"性别:\")]),\n            _c(\"text\", [\n              _vm._v(_vm._s(_vm.userinfo.userSex == 0 ? \"男\" : \"女\"))\n            ]),\n            _c(\"view\", { staticClass: \"right\" }, [\n              _c(\"image\", {\n                staticClass: \"bq\",\n                attrs: { src: \"../../static/home/gengduo_41.png\", mode: \"\" }\n              })\n            ])\n          ])\n        ]\n      ),\n      _c(\"view\", { staticClass: \"item2\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"个性签名\")]),\n        _c(\"textarea\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.userinfo.spec_name,\n              expression: \"userinfo.spec_name\"\n            }\n          ],\n          staticClass: \"text\",\n          attrs: {\n            type: \"text\",\n            placeholder: \"请输入个性签名\",\n            eventid: \"71d77020-5\"\n          },\n          domProps: { value: _vm.userinfo.spec_name },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.userinfo.spec_name = $event.target.value\n            }\n          }\n        })\n      ]),\n      _c(\n        \"view\",\n        {\n          staticClass: \"btn\",\n          attrs: { eventid: \"71d77020-6\" },\n          on: { click: _vm.save }\n        },\n        [_vm._v(\"保存\")]\n      )\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=D:/%E8%A5%BF%E6%B8%AF%E9%A1%B9%E7%9B%AE/newUni-app_2/pages/userMsg/userMsg.vue?vue&type=template&id=513554d9&scoped=true&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"content\" },\n    [\n      _c(\"view\", { staticClass: \"item3\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"头像:\")]),\n        _c(\n          \"view\",\n          {\n            staticClass: \"right\",\n            attrs: { eventid: \"71d77020-0\" },\n            on: { click: _vm.paizhao }\n          },\n          [\n            _vm.imglist2\n              ? _c(\"image\", {\n                  staticClass: \"tx\",\n                  attrs: { src: _vm.imglist2, mode: \"\" }\n                })\n              : _c(\"image\", {\n                  staticClass: \"tx\",\n                  attrs: { src: _vm.imgurl + _vm.imglist, mode: \"\" }\n                }),\n            _c(\"image\", {\n              staticClass: \"bq\",\n              attrs: { src: \"../../static/gengduo_41.png\", mode: \"\" }\n            })\n          ]\n        )\n      ]),\n      _c(\"view\", { staticClass: \"item\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"用户名:\")]),\n        _c(\"input\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.userinfo.name,\n              expression: \"userinfo.name\"\n            }\n          ],\n          attrs: {\n            type: \"text\",\n            placeholder: \"请输入用户名\",\n            eventid: \"71d77020-1\"\n          },\n          domProps: { value: _vm.userinfo.name },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.userinfo.name = $event.target.value\n            }\n          }\n        })\n      ]),\n      _c(\"view\", { staticClass: \"item\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"昵称:\")]),\n        _c(\"input\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.userinfo.nickName,\n              expression: \"userinfo.nickName\"\n            }\n          ],\n          attrs: {\n            type: \"text\",\n            value: \"\",\n            placeholder: \"请输入用户昵称\",\n            eventid: \"71d77020-2\"\n          },\n          domProps: { value: _vm.userinfo.nickName },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.userinfo.nickName = $event.target.value\n            }\n          }\n        })\n      ]),\n      _c(\"view\", { staticClass: \"item\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"电话:\")]),\n        _c(\"input\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.userinfo.userPhone,\n              expression: \"userinfo.userPhone\"\n            }\n          ],\n          attrs: {\n            type: \"number\",\n            value: \"\",\n            placeholder: \"请输入电话号码\",\n            disabled: \"true\",\n            eventid: \"71d77020-3\"\n          },\n          domProps: { value: _vm.userinfo.userPhone },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.userinfo.userPhone = $event.target.value\n            }\n          }\n        })\n      ]),\n      _c(\n        \"picker\",\n        {\n          attrs: { mode: \"selector\", range: _vm.range, eventid: \"71d77020-4\" },\n          on: { change: _vm.bindPickerChange }\n        },\n        [\n          _c(\"view\", { staticClass: \"item3\" }, [\n            _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"性别:\")]),\n            _c(\"text\", { staticClass: \"sex\" }, [\n              _vm._v(_vm._s(_vm.userinfo.userSex == 0 ? \"男\" : \"女\"))\n            ]),\n            _c(\"view\", { staticClass: \"right\" }, [\n              _c(\"image\", {\n                staticClass: \"bq\",\n                attrs: { src: \"../../static/gengduo_41.png\", mode: \"\" }\n              })\n            ])\n          ])\n        ]\n      ),\n      _c(\"view\", { staticClass: \"item2\" }, [\n        _c(\"text\", { staticClass: \"title3\" }, [_vm._v(\"个性签名\")]),\n        _c(\"textarea\", {\n          directives: [\n            {\n              name: \"model\",\n              rawName: \"v-model\",\n              value: _vm.userinfo.spec_name,\n              expression: \"userinfo.spec_name\"\n            }\n          ],\n          staticClass: \"text\",\n          attrs: {\n            type: \"text\",\n            placeholder: \"请输入个性签名\",\n            eventid: \"71d77020-5\"\n          },\n          domProps: { value: _vm.userinfo.spec_name },\n          on: {\n            input: function($event) {\n              if ($event.target.composing) {\n                return\n              }\n              _vm.userinfo.spec_name = $event.target.value\n            }\n          }\n        })\n      ]),\n      _c(\n        \"view\",\n        {\n          staticClass: \"btn\",\n          attrs: { eventid: \"71d77020-6\" },\n          on: { click: _vm.save }\n        },\n        [_vm._v(\"保存\")]\n      )\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=D:/%E8%A5%BF%E6%B8%AF%E9%A1%B9%E7%9B%AE/newUni-app_2/pages/userMsg/userMsg.vue?vue&type=template&id=513554d9&scoped=true&");
 
 /***/ }),
 
@@ -4199,7 +4196,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=D:/%E8%A5%BF%E6%B
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"content\" },\n    [\n      _c(\"view\", { staticClass: \"liubai\" }),\n      _c(\n        \"view\",\n        { staticClass: \"title\" },\n        [\n          _c(\n            \"picker\",\n            {\n              attrs: { mode: \"date\", eventid: \"7f7950b2-0\" },\n              on: { change: _vm.bindPickerChange }\n            },\n            [_c(\"image\", { attrs: { src: \"../../static/rili_13.png\" } })]\n          ),\n          _c(\"text\", { staticClass: \"date\" }, [_vm._v(_vm._s(_vm.isDate))]),\n          _c(\n            \"text\",\n            {\n              staticClass: \"tabs\",\n              attrs: { eventid: \"7f7950b2-1\" },\n              on: {\n                click: function($event) {\n                  _vm.ishowList()\n                }\n              }\n            },\n            [_vm._v(\"全部产品\")]\n          )\n        ],\n        1\n      ),\n      _c(\"view\", { staticClass: \"liubai\" }),\n      _vm._m(0),\n      _vm._l(_vm.productList, function(item, index) {\n        return _c(\"view\", { key: index, staticClass: \"item\" }, [\n          _c(\"text\", { staticClass: \"title2\" }, [\n            _vm._v(_vm._s(item.productName))\n          ]),\n          _c(\"text\", [_vm._v(_vm._s(item.orderCount))]),\n          _c(\"text\", [_vm._v(_vm._s(item.saleCount))]),\n          _c(\"text\", [_vm._v(\"￥\" + _vm._s(item.salePrice))])\n        ])\n      }),\n      _c(\"view\", { staticClass: \"item\" }, [\n        _c(\"text\", { staticClass: \"title2\" }, [_vm._v(\"总计\")]),\n        _c(\"text\", [_vm._v(_vm._s(_vm.totalOrderCount))]),\n        _c(\"text\", [_vm._v(_vm._s(_vm.totalSaleCount))]),\n        _c(\"text\", [_vm._v(\"￥\" + _vm._s(_vm.totalSalePrice))])\n      ]),\n      _vm.ishow\n        ? _c(\n            \"view\",\n            { staticClass: \"content\" },\n            _vm._l(_vm.categoryList, function(item, index) {\n              return _c(\n                \"view\",\n                {\n                  key: index,\n                  staticClass: \"list\",\n                  attrs: { eventid: \"7f7950b2-2-\" + index },\n                  on: {\n                    click: function($event) {\n                      _vm.categoryChange(item.categoryId)\n                    }\n                  }\n                },\n                [_vm._v(_vm._s(item.categoryName))]\n              )\n            })\n          )\n        : _vm._e()\n    ],\n    2\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"item\" }, [\n      _c(\"text\", [_vm._v(\"产品名称\")]),\n      _c(\"text\", [_vm._v(\"销售笔数\")]),\n      _c(\"text\", [_vm._v(\"销售数量\")]),\n      _c(\"text\", [_vm._v(\"销售金额\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=D:/%E8%A5%BF%E6%B8%AF%E9%A1%B9%E7%9B%AE/newUni-app_2/pages/shouruTJ/shouruTJ.vue?vue&type=template&id=44e8982b&scoped=true&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"content\" },\n    [\n      _c(\"view\", { staticClass: \"liubai\" }),\n      _c(\n        \"view\",\n        { staticClass: \"title\" },\n        [\n          _c(\n            \"picker\",\n            {\n              attrs: { mode: \"date\", eventid: \"7f7950b2-0\" },\n              on: { change: _vm.bindPickerChange }\n            },\n            [_c(\"image\", { attrs: { src: \"../../static/rili_13.png\" } })]\n          ),\n          _c(\"text\", { staticClass: \"date\" }, [_vm._v(_vm._s(_vm.isDate))]),\n          _c(\n            \"text\",\n            {\n              staticClass: \"tabs\",\n              attrs: { eventid: \"7f7950b2-1\" },\n              on: {\n                click: function($event) {\n                  _vm.ishowList()\n                }\n              }\n            },\n            [_vm._v(\"全部产品\")]\n          )\n        ],\n        1\n      ),\n      _c(\"view\", { staticClass: \"liubai\" }),\n      _vm._m(0),\n      _vm._l(_vm.productList, function(item, index) {\n        return _c(\"view\", { key: index, staticClass: \"item\" }, [\n          _c(\"text\", { staticClass: \"title2\" }, [\n            _vm._v(_vm._s(item.productName))\n          ]),\n          _c(\"text\", [_vm._v(_vm._s(item.orderCount))]),\n          _c(\"text\", [_vm._v(_vm._s(item.saleCount))]),\n          _c(\"text\", [_vm._v(\"￥\" + _vm._s(item.salePrice))])\n        ])\n      }),\n      _c(\"view\", { staticClass: \"item\" }, [\n        _c(\"text\", { staticClass: \"title2\" }, [_vm._v(\"总计\")]),\n        _c(\"text\", [_vm._v(_vm._s(_vm.totalOrderCount))]),\n        _c(\"text\", [_vm._v(_vm._s(_vm.totalSaleCount))]),\n        _c(\"text\", [_vm._v(\"￥\" + _vm._s(_vm.totalSalePrice))])\n      ]),\n      _vm.ishow\n        ? _c(\n            \"view\",\n            { staticClass: \"content2\" },\n            _vm._l(_vm.categoryList, function(item, index) {\n              return _c(\n                \"view\",\n                {\n                  key: index,\n                  staticClass: \"list\",\n                  attrs: { eventid: \"7f7950b2-2-\" + index },\n                  on: {\n                    click: function($event) {\n                      _vm.categoryChange(item.categoryId)\n                    }\n                  }\n                },\n                [_vm._v(_vm._s(item.categoryName))]\n              )\n            })\n          )\n        : _vm._e()\n    ],\n    2\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"item\" }, [\n      _c(\"text\", [_vm._v(\"产品名称\")]),\n      _c(\"text\", [_vm._v(\"销售笔数\")]),\n      _c(\"text\", [_vm._v(\"销售数量\")]),\n      _c(\"text\", [_vm._v(\"销售金额\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=D:/%E8%A5%BF%E6%B8%AF%E9%A1%B9%E7%9B%AE/newUni-app_2/pages/shouruTJ/shouruTJ.vue?vue&type=template&id=44e8982b&scoped=true&");
 
 /***/ }),
 

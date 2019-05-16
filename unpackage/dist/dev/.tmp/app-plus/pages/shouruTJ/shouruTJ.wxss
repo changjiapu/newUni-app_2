@@ -68,14 +68,15 @@
   color: #000000;
   background-color: #f7f7f7;
 }
-.content .content.data-v-44e8982b {
+.content .content2.data-v-44e8982b {
   position: absolute;
   top: 135rpx;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.content .content .list.data-v-44e8982b {
+.content .content2 .list.data-v-44e8982b {
   padding-left: 100rpx;
   width: 100%;
   background-color: #ffffff;

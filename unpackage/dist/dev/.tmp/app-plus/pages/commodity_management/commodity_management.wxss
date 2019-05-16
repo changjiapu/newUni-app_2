@@ -55,7 +55,7 @@
           box-shadow: 3px 3px 3px #eeeeee;
 }
 .content .product .item.data-v-11cb8a4b:nth-of-type(even) {
-  margin-left: 20rpx;
+  margin-left: 25rpx;
 }
 .content .product .item image.data-v-11cb8a4b {
   width: 100%;

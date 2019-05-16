@@ -150,6 +150,7 @@ let lineOption = {
 export default {
 	data() {
 		return {
+			version: '', //版本号
 			tab: 1, //默认柱状图
 			dateType: 0, //统计类型 0-日报表/1-月报表/2-季报表/3-年报表(默认传0)
 			startTime: '', //开始时间
@@ -186,8 +187,71 @@ export default {
 			option.series[0].data = [];
 			this.getMoneyAnalysisByShopId(this.shopId, this.dateType, this.startTime, this.endTime);
 		}
+		//检查版本更新
+		this.version = plus.runtime.version;
+		uni.getSystemInfo({
+			success: res => {
+				console.log(res.platform);
+				//检测当前平台，如果是安卓则启动安卓更新
+				if (res.platform == 'android') {
+					this.AndroidCheckUpdate();
+				}
+			}
+		});
 	},
 	methods: {
+		//检查版本更新
+		AndroidCheckUpdate() {
+			uni.request({
+				url: 'http://114.115.211.170:8018/system/version/getNewVersionNumber?type=2',
+				method: 'GET',
+				data: {},
+				success: res => {
+					console.log(res.data.data);
+					console.log(this.version);
+					if (res.data.data > this.version) {
+						if (plus.networkinfo.getCurrentType() != 3) {
+							uni.showToast({
+								title: '有新的版本发布，检测到您目前非Wifi连接，为节约您的流量，程序已停止自动更新，将在您连接WIFI之后重新检测更新。',
+								mask: false,
+								duration: 7000,
+								icon: 'none'
+							});
+							return;
+						}
+						uni.showToast({
+							title: '有新的版本发布，检测到您目前为Wifi连接，程序已启动自动更新。新版本下载完成后将自动弹出安装程序。',
+							mask: false,
+							duration: 7000,
+							icon: 'none'
+						});
+						var dtask = plus.downloader.createDownload('http://114.115.211.170:8008/app/shanghu.apk', {}, function(d, status) {
+							// 下载完成
+							if (status == 200) {
+								plus.runtime.install(plus.io.convertLocalFileSystemURL(d.filename), {}, {}, function(error) {
+									uni.showToast({
+										title: '安装失败',
+										mask: false,
+										icon: 'none',
+										duration: 1500
+									});
+								});
+							} else {
+								uni.showToast({
+									title: '更新失败',
+									mask: false,
+									icon: 'none',
+									duration: 1500
+								});
+							}
+						});
+						dtask.start();
+					}
+				},
+				fail: () => {},
+				complete: () => {}
+			});
+		},
 		//折线
 		zhexian() {
 			this.tab = 3;

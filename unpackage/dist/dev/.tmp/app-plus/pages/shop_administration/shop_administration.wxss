@@ -46,6 +46,10 @@
           justify-content: space-between;
   border-bottom: 1px solid #eeeeee;
 }
+.content .content1 .item input.data-v-42be660a {
+  text-align: right;
+  color: #999999;
+}
 .content .content1 .item .title.data-v-42be660a {
   width: 150rpx;
 }
@@ -112,6 +116,6 @@
   width: 30rpx;
 }
 .content .content2 .item text.data-v-42be660a {
-  margin-right: 280rpx;
+  margin-right: 340rpx;
 }
 
