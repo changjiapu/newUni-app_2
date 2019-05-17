@@ -1,13 +1,14 @@
 <template>
 	<view class="content">
-		<image class="logo" src="../../static/logo_03.png" mode=""></image>
+		<image class="logo_2" src="../../static/logo_03.png" mode=""></image>
+		<image class="logo" src="../../static/logo_3.png" mode=""></image>
 		<view class="input">
 			<image src="../../static/wodedenglu_07.png" mode=""></image>
-			<input type="number" placeholder="请输入手机号"  maxlength=11 v-model="phone" />
+			<input type="number" placeholder="请输入手机号" maxlength="11" v-model="phone" />
 		</view>
 		<view class="input">
 			<image src="../../static/shurumima_10.png" mode=""></image>
-			<input type="password" placeholder="请输入密码"  maxlength=20 v-model="password" />
+			<input type="password" placeholder="请输入密码" maxlength="20" v-model="password" />
 		</view>
 		<view class="btn" @click="login()">立即登录</view>
 		<view class="logn">
@@ -62,7 +63,7 @@ export default {
 					this.$store.commit('SET_TOKEN', res.data.data.token);
 					this.$store.commit('SET_USERID', res.data.data.userId);
 					uni.reLaunch({
-						url: '/pages/index/index'
+						url: '/pages/commodity_management/commodity_management'
 					});
 				} else {
 					uni.showModal({
@@ -98,10 +99,19 @@ export default {
 		font-size: 24upx;
 	}
 	.logo {
+		border-radius: 10upx;
+		border: 1px solid #cccccc;
 		margin-top: 100upx;
-		width: 235upx;
+		width: 280upx;
 		height: 280upx;
 		margin-bottom: 50upx;
+	}
+	.logo_2 {
+		position: fixed;
+		top:30upx;
+		left: 30upx;
+		width: 80upx;
+		height: 80upx;
 	}
 	.input {
 		margin-top: 30upx;
@@ -121,7 +131,7 @@ export default {
 		}
 	}
 	.btn {
-		margin-top: 100upx;
+		margin-top: 50upx;
 		height: 100upx;
 		line-height: 100upx;
 		width: 620upx;

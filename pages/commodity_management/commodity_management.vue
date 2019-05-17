@@ -7,20 +7,23 @@
 			</view>
 		</view>
 		<view class="product">
-			<view class="item" v-for="(item, index) in productList" :key="index">
+			<view class="item" v-if="productList.length>0" v-for="(item, index) in productList" :key="index">
 				<image :src="imgURl + item.imgList[0]" mode=""></image>
 				<text>{{ item.productName }}</text>
 				<text class="shangjia" v-if="item.publishStatus == 1">已上架</text>
 				<text class="shangjia2" v-if="item.publishStatus == 0">未上架</text>
 				<view class="price">
 					<text>￥{{ item.price }}</text>
-					<!-- <text>￥399</text> -->
 					<view class="yuan" @click="isShowChange(item.productId)">
 						<text class="yuandian"></text>
 						<text class="yuandian"></text>
 						<text class="yuandian"></text>
 					</view>
 				</view>
+			</view>
+			<view class="kong" v-if="productList.length==0">
+				<image src="../../static/meiyoudingdan-01.png" mode=""></image>
+				<text>~快去添加商品吧~</text>
 			</view>
 		</view>
 		<view class="zhedang" v-if="isShow" @click.stop="isShowChange2()">
@@ -62,12 +65,37 @@ export default {
 			sortWay: 0 //价格排序方式 0升序 1降序
 		};
 	},
+	onLoad() {
+		const userId = uni.getStorageSync('userId');
+		const token = uni.getStorageSync('token');
+		const shopId = uni.getStorageSync('shopId');
+		if (userId) {
+			this.$store.commit('SET_SHOPID', shopId);
+			this.$store.commit('SET_USERID', userId);
+			this.$store.commit('SET_TOKEN', token);
+		} else {
+			uni.reLaunch({
+				url: '/pages/logn/logn'
+			});
+		}
+		//检查版本更新
+		this.version = plus.runtime.version;
+		uni.getSystemInfo({
+			success: res => {
+				console.log(res.platform);
+				//检测当前平台，如果是安卓则启动安卓更新
+				if (res.platform == 'android') {
+					this.AndroidCheckUpdate();
+				}
+			}
+		});
+	},
 	onShow() {
 		if (this.shopId) {
 			this.imgURl = imgURl;
 			this.getShopStatusByUserId(this.userId);
 			this.productList = [];
-			this.pageNo=1;
+			this.pageNo = 1;
 			this.getProductByShopId(this.pageNo, 10, this.shopId, this.sortWay);
 		}
 	},
@@ -80,6 +108,58 @@ export default {
 		...mapState(['userId', 'shopId'])
 	},
 	methods: {
+		//检查版本更新
+		AndroidCheckUpdate() {
+			uni.request({
+				url: 'http://114.115.211.170:8018/system/version/getNewVersionNumber?type=2',
+				method: 'GET',
+				data: {},
+				success: res => {
+					console.log(res.data.data);
+					console.log(this.version);
+					if (res.data.data > this.version) {
+						if (plus.networkinfo.getCurrentType() != 3) {
+							uni.showToast({
+								title: '有新的版本发布，检测到您目前非Wifi连接，为节约您的流量，程序已停止自动更新，将在您连接WIFI之后重新检测更新。',
+								mask: false,
+								duration: 7000,
+								icon: 'none'
+							});
+							return;
+						}
+						uni.showToast({
+							title: '有新的版本发布，检测到您目前为Wifi连接，程序已启动自动更新。新版本下载完成后将自动弹出安装程序。',
+							mask: false,
+							duration: 7000,
+							icon: 'none'
+						});
+						var dtask = plus.downloader.createDownload('http://114.115.211.170:8008/app/shanghu.apk', {}, function(d, status) {
+							// 下载完成
+							if (status == 200) {
+								plus.runtime.install(plus.io.convertLocalFileSystemURL(d.filename), {}, {}, function(error) {
+									uni.showToast({
+										title: '安装失败',
+										mask: false,
+										icon: 'none',
+										duration: 1500
+									});
+								});
+							} else {
+								uni.showToast({
+									title: '更新失败',
+									mask: false,
+									icon: 'none',
+									duration: 1500
+								});
+							}
+						});
+						dtask.start();
+					}
+				},
+				fail: () => {},
+				complete: () => {}
+			});
+		},
 		isShowChange2() {
 			this.isShow = false;
 		},
@@ -127,7 +207,7 @@ export default {
 						duration: 1000
 					});
 					this.productList = [];
-					this.pageNo=1;
+					this.pageNo = 1;
 					this.getProductByShopId(this.pageNo, 10, this.shopId, this.sortWay);
 				}
 			});
@@ -144,7 +224,7 @@ export default {
 						duration: 1000
 					});
 					this.productList = [];
-						this.pageNo=1;
+					this.pageNo = 1;
 					this.getProductByShopId(this.pageNo, 10, this.shopId, this.sortWay);
 				}
 			});
@@ -161,7 +241,7 @@ export default {
 						duration: 1000
 					});
 					this.productList = [];
-						this.pageNo=1;
+					this.pageNo = 1;
 					this.getProductByShopId(this.pageNo, 10, this.shopId, this.sortWay);
 				}
 			});
@@ -170,9 +250,9 @@ export default {
 		gotoAdd() {
 			if (this.shopStatus == -1) {
 				uni.showToast({
-					title: '还为入驻商家',
+					title: '请先添加店铺,在申请入驻商家',
 					icon: 'none',
-					duration: 1000
+					duration: 3000
 				});
 				return;
 			}
@@ -228,6 +308,22 @@ export default {
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
+		.kong {
+			margin-top: 200upx;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			image {
+				height: 200upx;
+				width: 200upx;
+			}
+			text {
+				color: #999999;
+				margin-top: 40upx;
+			}
+		}
 		.item {
 			position: relative;
 			display: flex;

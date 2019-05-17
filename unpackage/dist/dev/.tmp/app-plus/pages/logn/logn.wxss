@@ -24,6 +24,13 @@
   height: 280rpx;
   margin-bottom: 50rpx;
 }
+.content .logo_2.data-v-4b0e236b {
+  position: fixed;
+  top: 30rpx;
+  left: 30rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
 .content .input.data-v-4b0e236b {
   margin-top: 30rpx;
   height: 90rpx;

@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/commodity_management/commodity_management",
     "pages/index/index",
     "pages/logn/logn",
     "pages/merchant/merchant",
     "pages/shop_administration/shop_administration",
-    "pages/commodity_management/commodity_management",
     "pages/register/register",
     "pages/user_center/user_center",
     "pages/userMsg/userMsg",
@@ -35,10 +35,10 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "iconPath": "static/baobiaotongjiweixuanzhong_22.png",
-        "selectedIconPath": "static/baobiaotongji_17.png",
-        "text": "报表统计"
+        "pagePath": "pages/commodity_management/commodity_management",
+        "iconPath": "static/shnagpinguanli_23.png",
+        "selectedIconPath": "static/shangpinguanlixuanzhong_25.png",
+        "text": "商品管理"
       },
       {
         "pagePath": "pages/shop_administration/shop_administration",
@@ -47,16 +47,16 @@
         "text": "店铺管理"
       },
       {
-        "pagePath": "pages/commodity_management/commodity_management",
-        "iconPath": "static/shnagpinguanli_23.png",
-        "selectedIconPath": "static/shangpinguanlixuanzhong_25.png",
-        "text": "商品管理"
-      },
-      {
         "pagePath": "pages/user_center/user_center",
         "iconPath": "static/gerenzhongxin_25.png",
         "selectedIconPath": "static/wodexuanzhong_22.png",
         "text": "个人中心"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/baobiaotongjiweixuanzhong_22.png",
+        "selectedIconPath": "static/baobiaotongji_17.png",
+        "text": "报表统计"
       }
     ]
   },

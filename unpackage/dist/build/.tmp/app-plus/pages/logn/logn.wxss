@@ -1,4 +1,4 @@
-.content.data-v-6f221e52 {
+.content.data-v-51e806a8 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -15,16 +15,25 @@
           align-items: center;
   font-size: 30rpx;
 }
-.content input.data-v-6f221e52 {
+.content input.data-v-51e806a8 {
   font-size: 24rpx;
 }
-.content .logo.data-v-6f221e52 {
+.content .logo.data-v-51e806a8 {
+  border-radius: 10rpx;
+  border: 1px solid #cccccc;
   margin-top: 100rpx;
-  width: 235rpx;
+  width: 280rpx;
   height: 280rpx;
   margin-bottom: 50rpx;
 }
-.content .input.data-v-6f221e52 {
+.content .logo_2.data-v-51e806a8 {
+  position: fixed;
+  top: 30rpx;
+  left: 30rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.content .input.data-v-51e806a8 {
   margin-top: 30rpx;
   height: 90rpx;
   width: 620rpx;
@@ -40,15 +49,15 @@
   border-radius: 10rpx;
   padding: 0 20rpx;
 }
-.content .input image.data-v-6f221e52 {
+.content .input image.data-v-51e806a8 {
   height: 35rpx;
   width: 35rpx;
 }
-.content .input input.data-v-6f221e52 {
+.content .input input.data-v-51e806a8 {
   margin-left: 20rpx;
 }
-.content .btn.data-v-6f221e52 {
-  margin-top: 100rpx;
+.content .btn.data-v-51e806a8 {
+  margin-top: 50rpx;
   height: 100rpx;
   line-height: 100rpx;
   width: 620rpx;
@@ -57,7 +66,7 @@
   color: #ffffff;
   text-align: center;
 }
-.content .logn.data-v-6f221e52 {
+.content .logn.data-v-51e806a8 {
   font-size: 26rpx;
   margin-top: 20rpx;
   padding: 0 40rpx;

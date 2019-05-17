@@ -1,0 +1,177 @@
+.content.data-v-11cb8a4b {
+  width: 100%;
+  overflow-x: hidden;
+}
+.content .title.data-v-11cb8a4b {
+  width: 100%;
+  background-color: #f7f7f7;
+  height: 90rpx;
+  position: relative;
+}
+.content .title .tianjia.data-v-11cb8a4b {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  color: #999999;
+  right: 20rpx;
+}
+.content .title .tianjia image.data-v-11cb8a4b {
+  height: 60rpx;
+  width: 60rpx;
+}
+.content .product.data-v-11cb8a4b {
+  padding: 30rpx;
+  padding-top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.content .product .item.data-v-11cb8a4b {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 335rpx;
+  margin-top: 20rpx;
+  -webkit-box-shadow: 3px 3px 3px #eeeeee;
+          box-shadow: 3px 3px 3px #eeeeee;
+}
+.content .product .item.data-v-11cb8a4b:nth-of-type(even) {
+  margin-left: 25rpx;
+}
+.content .product .item image.data-v-11cb8a4b {
+  width: 100%;
+  height: 350rpx;
+  margin-bottom: 15rpx;
+}
+.content .product .item .shangjia.data-v-11cb8a4b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10rpx 20rpx;
+  background-color: red;
+  color: #ffffff;
+}
+.content .product .item .shangjia2.data-v-11cb8a4b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10rpx 20rpx;
+  background-color: #999999;
+  color: #ffffff;
+}
+.content .product .item .price.data-v-11cb8a4b {
+  position: relative;
+  margin-top: 15rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .product .item .price text.data-v-11cb8a4b:first-of-type {
+  color: red;
+}
+.content .product .item .price text.data-v-11cb8a4b:nth-of-type(2) {
+  margin-left: 20rpx;
+  text-decoration: line-through;
+  color: #999999;
+}
+.content .product .item .price .yuan.data-v-11cb8a4b {
+  height: 100rpx;
+  width: 100rpx;
+  position: absolute;
+  right: 0rpx;
+  bottom: 0rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .product .item .price .yuan .yuandian.data-v-11cb8a4b {
+  height: 10rpx;
+  width: 10rpx;
+  background-color: #999999;
+  border-radius: 100%;
+  margin-left: 10rpx;
+}
+.content .zhedang.data-v-11cb8a4b {
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content .zhedang .edit.data-v-11cb8a4b {
+  position: absolute;
+  right: 20rpx;
+  width: 450rpx;
+  height: 130rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.content .zhedang .edit .item.data-v-11cb8a4b {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .zhedang .edit .item image.data-v-11cb8a4b {
+  height: 35rpx;
+  width: 35rpx;
+}
+

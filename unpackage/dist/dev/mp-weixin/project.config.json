@@ -4,12 +4,13 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true
+    "urlCheck": true,
+    "postcss": true
   },
   "compileType": "miniprogram",
-  "libVersion": "",
+  "libVersion": "2.6.4",
   "appid": "touristappid",
-  "projectname": "bbb",
+  "projectname": "西港商户端",
   "condition": {
     "search": {
       "current": -1,

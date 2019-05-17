@@ -1,14 +1,14 @@
-.content.data-v-4404ccfe {
+.content.data-v-653b219e {
   width: 100%;
   overflow-x: hidden;
 }
-.content .title.data-v-4404ccfe {
+.content .title.data-v-653b219e {
   width: 100%;
   background-color: #f7f7f7;
   height: 90rpx;
   position: relative;
 }
-.content .title .tianjia.data-v-4404ccfe {
+.content .title .tianjia.data-v-653b219e {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -22,11 +22,11 @@
   color: #999999;
   right: 20rpx;
 }
-.content .title .tianjia image.data-v-4404ccfe {
+.content .title .tianjia image.data-v-653b219e {
   height: 60rpx;
   width: 60rpx;
 }
-.content .product.data-v-4404ccfe {
+.content .product.data-v-653b219e {
   padding: 30rpx;
   padding-top: 0;
   width: 100%;
@@ -38,7 +38,36 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.content .product .item.data-v-4404ccfe {
+.content .product .kong.data-v-653b219e {
+  margin-top: 200rpx;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.content .product .kong image.data-v-653b219e {
+  height: 200rpx;
+  width: 200rpx;
+}
+.content .product .kong text.data-v-653b219e {
+  color: #999999;
+  margin-top: 40rpx;
+}
+.content .product .item.data-v-653b219e {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -54,15 +83,15 @@
   -webkit-box-shadow: 3px 3px 3px #eeeeee;
           box-shadow: 3px 3px 3px #eeeeee;
 }
-.content .product .item.data-v-4404ccfe:nth-of-type(even) {
+.content .product .item.data-v-653b219e:nth-of-type(even) {
   margin-left: 25rpx;
 }
-.content .product .item image.data-v-4404ccfe {
+.content .product .item image.data-v-653b219e {
   width: 100%;
   height: 350rpx;
   margin-bottom: 15rpx;
 }
-.content .product .item .shangjia.data-v-4404ccfe {
+.content .product .item .shangjia.data-v-653b219e {
   position: absolute;
   top: 0;
   left: 0;
@@ -70,7 +99,7 @@
   background-color: red;
   color: #ffffff;
 }
-.content .product .item .shangjia2.data-v-4404ccfe {
+.content .product .item .shangjia2.data-v-653b219e {
   position: absolute;
   top: 0;
   left: 0;
@@ -78,7 +107,7 @@
   background-color: #999999;
   color: #ffffff;
 }
-.content .product .item .price.data-v-4404ccfe {
+.content .product .item .price.data-v-653b219e {
   position: relative;
   margin-top: 15rpx;
   display: -webkit-box;
@@ -90,15 +119,15 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.content .product .item .price text.data-v-4404ccfe:first-of-type {
+.content .product .item .price text.data-v-653b219e:first-of-type {
   color: red;
 }
-.content .product .item .price text.data-v-4404ccfe:nth-of-type(2) {
+.content .product .item .price text.data-v-653b219e:nth-of-type(2) {
   margin-left: 20rpx;
   text-decoration: line-through;
   color: #999999;
 }
-.content .product .item .price .yuan.data-v-4404ccfe {
+.content .product .item .price .yuan.data-v-653b219e {
   height: 100rpx;
   width: 100rpx;
   position: absolute;
@@ -113,14 +142,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.content .product .item .price .yuan .yuandian.data-v-4404ccfe {
+.content .product .item .price .yuan .yuandian.data-v-653b219e {
   height: 10rpx;
   width: 10rpx;
   background-color: #999999;
   border-radius: 100%;
   margin-left: 10rpx;
 }
-.content .zhedang.data-v-4404ccfe {
+.content .zhedang.data-v-653b219e {
   position: fixed;
   top: 0;
   z-index: 99999;
@@ -136,7 +165,7 @@
           align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.content .zhedang .edit.data-v-4404ccfe {
+.content .zhedang .edit.data-v-653b219e {
   position: absolute;
   right: 20rpx;
   width: 450rpx;
@@ -155,7 +184,7 @@
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
-.content .zhedang .edit .item.data-v-4404ccfe {
+.content .zhedang .edit .item.data-v-653b219e {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -170,7 +199,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.content .zhedang .edit .item image.data-v-4404ccfe {
+.content .zhedang .edit .item image.data-v-653b219e {
   height: 35rpx;
   width: 35rpx;
 }

@@ -1,9 +1,15 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/commodity_management/commodity_management",
+			"style": {
+				"navigationBarTitleText": "商品管理"
+			}
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "西安集贸"
+				"navigationBarTitleText": "报表统计"
 				// 				"navigationStyle": "custom",
 				// 				"app-plus": {
 				// 					"titleNView": false //禁用原生导航栏
@@ -13,7 +19,7 @@
 		{
 			"path": "pages/logn/logn",
 			"style": {
-				"navigationBarTitleText": "登录"
+				"navigationBarTitleText": "商户端登录"
 			}
 		},
 		{
@@ -28,12 +34,7 @@
 				"navigationBarTitleText": "店铺管理"
 			}
 		},
-		{
-			"path": "pages/commodity_management/commodity_management",
-			"style": {
-				"navigationBarTitleText": "商品管理"
-			}
-		},
+
 		{
 			"path": "pages/register/register",
 			"style": {
@@ -118,8 +119,6 @@
 				"navigationBarTitleText": "忘记密码"
 			}
 		}
-
-
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -133,10 +132,10 @@
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"list": [{
-				"pagePath": "pages/index/index",
-				"iconPath": "static/baobiaotongjiweixuanzhong_22.png",
-				"selectedIconPath": "static/baobiaotongji_17.png",
-				"text": "报表统计"
+				"pagePath": "pages/commodity_management/commodity_management",
+				"iconPath": "static/shnagpinguanli_23.png",
+				"selectedIconPath": "static/shangpinguanlixuanzhong_25.png",
+				"text": "商品管理"
 			}, {
 				"pagePath": "pages/shop_administration/shop_administration",
 				"iconPath": "static/shangpuguanli_20.png",
@@ -144,16 +143,15 @@
 				"text": "店铺管理"
 			},
 			{
-				"pagePath": "pages/commodity_management/commodity_management",
-				"iconPath": "static/shnagpinguanli_23.png",
-				"selectedIconPath": "static/shangpinguanlixuanzhong_25.png",
-				"text": "商品管理"
-			},
-			{
 				"pagePath": "pages/user_center/user_center",
 				"iconPath": "static/gerenzhongxin_25.png",
 				"selectedIconPath": "static/wodexuanzhong_22.png",
 				"text": "个人中心"
+			}, {
+				"pagePath": "pages/index/index",
+				"iconPath": "static/baobiaotongjiweixuanzhong_22.png",
+				"selectedIconPath": "static/baobiaotongji_17.png",
+				"text": "报表统计"
 			}
 		]
 	}
