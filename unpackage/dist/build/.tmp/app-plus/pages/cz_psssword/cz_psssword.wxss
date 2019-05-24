@@ -1,11 +1,11 @@
-.content.data-v-0464ddb3 {
+.content.data-v-4f14616d {
   width: 100%;
   font-size: 30rpx;
   padding: 20rpx;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.content .item.data-v-0464ddb3 {
+.content .item.data-v-4f14616d {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,10 +17,19 @@
           align-items: center;
   border-bottom: 1px solid #dddddd;
 }
-.content .item text.data-v-0464ddb3 {
+.content .item text.data-v-4f14616d {
   width: 200rpx;
 }
-.content .btn.data-v-0464ddb3 {
+.content .item .code.data-v-4f14616d {
+  width: 25%;
+  font-size: 24rpx;
+  padding: 20rpx 10rpx;
+  background-color: #6d71d5;
+  text-align: center;
+  border-radius: 20rpx;
+  color: #ffffff;
+}
+.content .btn.data-v-4f14616d {
   height: 95rpx;
   line-height: 95rpx;
   width: 80%;

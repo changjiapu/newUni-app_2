@@ -20,6 +20,15 @@
 .content .item text.data-v-161f1857 {
   width: 200rpx;
 }
+.content .item .code.data-v-161f1857 {
+  width: 25%;
+  font-size: 24rpx;
+  padding: 20rpx 10rpx;
+  background-color: #6d71d5;
+  text-align: center;
+  border-radius: 20rpx;
+  color: #ffffff;
+}
 .content .btn.data-v-161f1857 {
   height: 95rpx;
   line-height: 95rpx;

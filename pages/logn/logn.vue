@@ -15,11 +15,15 @@
 			<text @click="register()">新用户注册</text>
 			<text @click="wjPassword()">忘记密码?</text>
 		</view>
+		<view class="third">
+			<view class="cut"><text>其他方式登录</text></view>
+			<view class="other"><view class="weixin" @click="weixinLogin()"></view></view>
+		</view>
 	</view>
 </template>
 
 <script>
-import { login } from '@/request/API/index.js';
+import { login, weChatLogin } from '@/request/API/index.js';
 export default {
 	data() {
 		return {
@@ -74,6 +78,55 @@ export default {
 				}
 			});
 		},
+		weixinLogin() {
+			console.log(1111);
+			uni.getProvider({
+				service: 'oauth',
+				success: res => {
+					if (~res.provider.indexOf('weixin')) {
+						uni.login({
+							provider: 'weixin',
+							success: rst => {
+								uni.getUserInfo({
+									provider: 'weixin',
+									success: info => {
+										console.log(JSON.stringify(info));
+										let params = {
+											nickName: info.userInfo.nickName,
+											avatarUrl: info.userInfo.avatarUrl,
+											gender: info.userInfo.gender,
+											openId: info.userInfo.openId,
+											userType: 1
+										};
+										console.log(555);
+										weChatLogin(params).then(res => {
+											console.log(JSON.stringify(res));
+											if (res.data.code == 0) {
+												uni.setStorageSync('token', res.data.data.token);
+												uni.setStorageSync('userId', res.data.data.userId);
+												uni.setStorageSync('shopId', res.data.data.shopId);
+												this.$store.commit('SET_SHOPID', res.data.data.shopId);
+												this.$store.commit('SET_TOKEN', res.data.data.token);
+												this.$store.commit('SET_USERID', res.data.data.userId);
+												uni.reLaunch({
+													url: '/pages/commodity_management/commodity_management'
+												});
+											} else {
+												uni.showModal({
+													title: '',
+													content: res.data.msg,
+													showCancel: false
+												});
+											}
+										});
+									}
+								});
+							}
+						});
+					}
+				}
+			});
+		},
 		register() {
 			uni.navigateTo({
 				url: '/pages/register/register'
@@ -108,7 +161,7 @@ export default {
 	}
 	.logo_2 {
 		position: fixed;
-		top:30upx;
+		top: 30upx;
 		left: 30upx;
 		width: 80upx;
 		height: 80upx;
@@ -148,6 +201,39 @@ export default {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+	}
+	.third {
+		margin-top: 100upx;
+		.cut {
+			color: #a4a4a4;
+			text-align: center;
+			position: relative;
+			& > text {
+				font-size: 22upx;
+			}
+			&::before {
+				left: 0;
+			}
+			&::after {
+				right: 0;
+			}
+		}
+		.other {
+			display: flex;
+			justify-content: center;
+			margin-top: 20upx;
+			& > view {
+				width: 120upx;
+				height: 120upx;
+				border-radius: 100%;
+				background-repeat: no-repeat;
+				background-position: center center;
+				&.weixin {
+					background-image: url('../../static/login_weixin.png');
+					background-size: 120upx 120upx;
+				}
+			}
+		}
 	}
 }
 </style>

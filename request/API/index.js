@@ -127,3 +127,11 @@ export function addShop(data){
 export function updateUserInfo(data){
 	return postRequest(data,'/user/updateUserInfo').then(res => res)
 }
+//获取短信验证码
+export function sendSmsCode(userPhone){
+	return getRequest('/user/sendSmsCode?userPhone='+userPhone).then(res => res)
+}
+//微信登录
+export function weChatLogin(data){
+	return postRequest(data,'/user/weChatLogin').then(res => res)
+}

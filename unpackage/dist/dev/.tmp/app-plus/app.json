@@ -18,6 +18,7 @@
     "pages/callCenter/callCenter",
     "pages/complain/complain",
     "pages/gonggaoFabu/gonggaoFabu",
+    "pages/shiwuzhaoling/shiwuzhaoling",
     "pages/wjPassword/wjPassword"
   ],
   "subPackages": [],
@@ -65,5 +66,5 @@
     "autoclose": false
   },
   "appname": "西港商户端",
-  "compilerVersion": "1.9.4"
+  "compilerVersion": "1.9.9"
 }

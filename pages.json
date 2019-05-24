@@ -114,6 +114,12 @@
 			}
 		},
 		{
+			"path": "pages/shiwuzhaoling/shiwuzhaoling",
+			"style": {
+				"navigationBarTitleText": "失物招领"
+			}
+		},
+		{
 			"path": "pages/wjPassword/wjPassword",
 			"style": {
 				"navigationBarTitleText": "忘记密码"

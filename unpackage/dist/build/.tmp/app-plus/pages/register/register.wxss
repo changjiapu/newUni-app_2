@@ -1,11 +1,11 @@
-.content.data-v-66382620 {
+.content.data-v-88bbe234 {
   font-size: 30rpx;
   width: 100%;
   padding: 0 30rpx;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.content .item.data-v-66382620 {
+.content .item.data-v-88bbe234 {
   height: 100rpx;
   width: 100%;
   display: -webkit-box;
@@ -18,10 +18,19 @@
           align-items: center;
   border-bottom: 1px solid #dddddd;
 }
-.content .item text.data-v-66382620 {
+.content .item text.data-v-88bbe234 {
   width: 30%;
 }
-.content .xieyi.data-v-66382620 {
+.content .item .code.data-v-88bbe234 {
+  width: 25%;
+  font-size: 24rpx;
+  padding: 20rpx 10rpx;
+  background-color: #6d71d5;
+  text-align: center;
+  border-radius: 20rpx;
+  color: #ffffff;
+}
+.content .xieyi.data-v-88bbe234 {
   font-size: 22rpx;
   display: -webkit-box;
   display: -webkit-flex;
@@ -33,11 +42,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.content .xieyi image.data-v-66382620 {
+.content .xieyi image.data-v-88bbe234 {
   height: 30rpx;
   width: 30rpx;
 }
-.content .btn.data-v-66382620 {
+.content .btn.data-v-88bbe234 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

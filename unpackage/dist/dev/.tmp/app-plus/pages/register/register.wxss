@@ -21,6 +21,15 @@
 .content .item text.data-v-f63ae5ea {
   width: 30%;
 }
+.content .item .code.data-v-f63ae5ea {
+  width: 25%;
+  font-size: 24rpx;
+  padding: 20rpx 10rpx;
+  background-color: #6d71d5;
+  text-align: center;
+  border-radius: 20rpx;
+  color: #ffffff;
+}
 .content .xieyi.data-v-f63ae5ea {
   font-size: 22rpx;
   display: -webkit-box;

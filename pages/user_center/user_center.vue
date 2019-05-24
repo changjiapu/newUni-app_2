@@ -3,7 +3,8 @@
 		<view class="head">
 			<!-- 		<image class="img_1" :src="imgURl+imglist" mode=""></image> -->
 			<image v-if="imglist" class="img_1" :src="imgURl + imglist" mode=""></image>
-			<image v-else class="img_1" src="../../static/touxiang_03.png" mode=""></image>
+			<image v-else class="img_1" :src="imglist2" mode=""></image>
+		<!-- 	<image v-else class="img_1" src="../../static/touxiang_03.png" mode=""></image> -->
 			<view class="msg">
 				<text>{{ nickName ? nickName : '未填写' }}</text>
 				<text>{{ spec_name ? spec_name : '未填写' }}</text>
@@ -32,6 +33,11 @@
 				<text>发布公告</text>
 				<image src="../../static/gengduo_41.png" mode=""></image>
 			</navigator>
+			<navigator class="list_item" url="/pages/shiwuzhaoling/shiwuzhaoling">
+				<image src="../../static/shiwuzhaoling.png" mode=""></image>
+				<text>失物招领</text>
+				<image src="../../static/gengduo_41.png" mode=""></image>
+			</navigator>
 			<navigator class="list_item" url="/pages/complain/complain">
 				<image src="../../static/yijianfankui_18.png" mode=""></image>
 				<text>意见反馈</text>
@@ -56,6 +62,7 @@ export default {
 			shopStatus: -1,
 			imgURl: '',
 			imglist: '', //用户头像
+			imglist2:'',//用户微信头像
 			nickName: '', //用户昵称
 			spec_name: '' //用户签名
 		};
@@ -118,6 +125,7 @@ export default {
 		getUserById() {
 			getUserById(this.userId).then(res => {
 				this.imglist = res.data.data.userPhoto;
+				this.imglist2=res.data.data.weChatPhoto;
 				this.spec_name = res.data.data.specName;
 				this.nickName = res.data.data.nickName;
 			});

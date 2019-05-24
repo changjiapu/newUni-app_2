@@ -18,7 +18,7 @@
 		</view>
 		<view class="item">
 			<text class="title3">电话:</text>
-			<input type="number" value="" v-model="userinfo.userPhone" placeholder="请输入电话号码" disabled=true />
+			<input type="number" value="" v-model="userinfo.userPhone" placeholder="请输入电话号码" />
 		</view>
 		<picker mode="selector" @change="bindPickerChange" :range="range">
 			<view class="item3">

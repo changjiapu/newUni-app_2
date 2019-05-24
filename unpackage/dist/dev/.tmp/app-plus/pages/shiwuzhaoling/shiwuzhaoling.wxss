@@ -1,0 +1,55 @@
+.content.data-v-57728475 {
+  width: 100%;
+  overflow-x: hidden;
+}
+.content .LG.data-v-57728475 {
+  padding: 20rpx;
+}
+.content .LG .lg_img.data-v-57728475 {
+  color: #999999;
+  margin: 20rpx 0;
+  display: block;
+  width: 200rpx;
+  height: 140rpx;
+  text-align: center;
+  line-height: 140rpx;
+  border: 1px dashed #dddddd;
+}
+.content .LG image.data-v-57728475 {
+  width: 200rpx;
+  height: 140rpx;
+  border: 1px dashed #dddddd;
+}
+.content .liubai.data-v-57728475 {
+  height: 20rpx;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.content .textInput.data-v-57728475 {
+  padding: 20rpx;
+  width: 100%;
+  height: 230rpx;
+}
+.content .input.data-v-57728475 {
+  padding: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .btn.data-v-57728475 {
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  height: 95rpx;
+  width: 80%;
+  border-radius: 10rpx;
+  background-color: #6d71d5;
+  text-align: center;
+  line-height: 95rpx;
+}
+
