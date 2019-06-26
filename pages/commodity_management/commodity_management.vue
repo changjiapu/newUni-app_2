@@ -7,7 +7,7 @@
 			</view>
 		</view>
 		<view class="product">
-			<view class="item" v-if="productList.length>0" v-for="(item, index) in productList" :key="index">
+			<view class="item" v-if="productList.length > 0" v-for="(item, index) in productList" :key="index">
 				<image :src="imgURl + item.imgList[0]" mode=""></image>
 				<text>{{ item.productName }}</text>
 				<text class="shangjia" v-if="item.publishStatus == 1">已上架</text>
@@ -21,7 +21,7 @@
 					</view>
 				</view>
 			</view>
-			<view class="kong" v-if="productList.length==0">
+			<view class="kong" v-if="productList.length == 0">
 				<image src="../../static/meiyoudingdan-01.png" mode=""></image>
 				<text>~快去添加商品吧~</text>
 			</view>
@@ -56,6 +56,7 @@ import { mapState } from 'vuex';
 export default {
 	data() {
 		return {
+			remark: '', //驳回理由
 			shopStatus: -1,
 			imgURl: '',
 			productId: '',
@@ -168,6 +169,7 @@ export default {
 			getShopStatusByUserId(userId).then(res => {
 				if (res.data.code == 0) {
 					this.shopStatus = res.data.data.shopStatus;
+					this.remark = res.data.data.remark;
 				}
 			});
 		},
@@ -265,10 +267,18 @@ export default {
 				return;
 			}
 			if (this.shopStatus == 2) {
-				uni.showToast({
-					title: '商家入驻驳回，请重新入驻',
-					icon: 'none',
-					duration: 1000
+				uni.showModal({
+					title: '入驻驳回理由',
+					content: this.remark + ',是否重新入驻?',
+					success: res => {
+						if (res.confirm) {
+							uni.navigateTo({
+								url: '/pages/merchant/merchant'
+							});
+						} else if (res.cancel) {
+							console.log('用户点击取消');
+						}
+					}
 				});
 				return;
 			}

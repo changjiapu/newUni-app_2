@@ -47,7 +47,8 @@
   margin-top: 50rpx;
   height: 95rpx;
   width: 80%;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   background-color: #6d71d5;
   text-align: center;
   line-height: 95rpx;

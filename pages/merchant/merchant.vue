@@ -16,10 +16,10 @@
 			<text>上传身份证正反照片</text>
 			<text style="display: block; color: #999999;font-size: 20upx;margin-top: 20upx;">(第一张为正面,第二张为反面)</text>
 			<view class="img">
-				<view class="img_item" v-if="img1.length == 0" @click="paizhao1()"><image src="../../static/zhengmianzhao_03.png" mode=""></image></view>
-				<image v-else class="img_1" :src="img1[0]" mode=""></image>
-				<view class="img_item" v-if="img2.length == 0" @click="paizhao2()"><image src="../../static/fanmianzhao_05.png" mode=""></image></view>
-				<image v-else class="img_1" :src="img2[0]" mode=""></image>
+				<view class="img_item" v-if="!img1" @click="paizhao1()"><image src="../../static/zhengmianzhao_03.png" mode=""></image></view>
+				<image v-else class="img_1" :src="imgURl + img1" mode="" @click="paizhao1()"></image>
+				<view class="img_item" v-if="!img2" @click="paizhao2()"><image src="../../static/fanmianzhao_05.png" mode=""></image></view>
+				<image v-else class="img_1" :src="imgURl + img2" mode=""  @click="paizhao2()"></image>
 			</view>
 		</view>
 		<view class="item">
@@ -36,22 +36,22 @@
 		</view>
 		<view class="LG">
 			<text>上传店铺图片</text>
-			<text class="lg_img" @click="paizhao3" v-if="img3.length == 0">点击上传</text>
-			<image v-else class="lg_img" :src="img3[0]" mode=""></image>
+			<text class="lg_img" @click="paizhao3" v-if="!img3">点击上传</text>
+			<image v-else class="lg_img" :src="imgURl + img3" mode=""  @click="paizhao3"></image>
 		</view>
 		<view class="LG">
 			<text>上传店铺营业执照</text>
-			<text class="lg_img" @click="paizhao6" v-if="img6.length == 0">点击上传</text>
-			<image v-else class="lg_img" :src="img6[0]" mode=""></image>
+			<text class="lg_img" @click="paizhao6" v-if="!img6">点击上传</text>
+			<image v-else class="lg_img" :src="imgURl + img6" mode=""  @click="paizhao6"></image>
 		</view>
 		<view class="code">
 			<text>上传微信支付宝收款二维码</text>
 			<text style="display: block; color: #999999;font-size: 20upx;margin-top: 20upx;">(请第一张上传微信,第二张上传支付宝)</text>
 			<view class="code_list">
-				<text class="code_img" v-if="img4.length == 0" @click="paizhao4">点击上传</text>
-				<image v-else class="code_img" :src="img4[0]" mode=""></image>
-				<text class="code_img" v-if="img5.length == 0" @click="paizhao5">点击上传</text>
-				<image v-else class="code_img" :src="img5[0]" mode=""></image>
+				<text class="code_img" v-if="!img4" @click="paizhao4">点击上传</text>
+				<image v-else class="code_img" :src="imgURl + img4" mode=""  @click="paizhao4"></image>
+				<text class="code_img" v-if="!img5" @click="paizhao5">点击上传</text>
+				<image v-else class="code_img" :src="imgURl + img5" mode=""  @click="paizhao5"></image>
 			</view>
 		</view>
 		<view v-if="ishow" class="btn" @click="ruzhu">完成</view>
@@ -61,18 +61,19 @@
 
 <script>
 import { baseURL, imgURl } from '../../common/config/index.js';
-import { addShop } from '@/request/API/index.js';
+import { addShop, getShopInfoById } from '@/request/API/index.js';
 import { mapState } from 'vuex';
 export default {
 	data() {
 		return {
+			imgURl: '',
 			ishow: true,
-			img1: [], //身份证正面
-			img2: [], //身份证反面
-			img3: [], //店铺logo
-			img4: [], //微信收款码
-			img5: [], //支付宝收款码
-			img6: [], //营业执照
+			img1: '', //身份证正面
+			img2: '', //身份证反面
+			img3: '', //店铺logo
+			img4: '', //微信收款码
+			img5: '', //支付宝收款码
+			img6: '', //营业执照
 			phone: '', //手机号
 			weChatId: '', //微信号
 			idCard: '', //身份证号
@@ -87,11 +88,39 @@ export default {
 			aliPayPhoto: '' //支付宝收款二维码
 		};
 	},
-	onLoad() {},
+	onLoad() {
+		this.imgURl = imgURl;
+		this.getShopInfoById(this.shopId);
+	},
 	computed: {
-		...mapState(['userId'])
+		...mapState(['userId', 'shopId'])
 	},
 	methods: {
+		getShopInfoById(id) {
+			getShopInfoById(id).then(res => {
+				if (res.data.code == 0) {
+					this.phone = res.data.data.phone;
+					this.weChatId = res.data.data.weChatId;
+					this.idCard = res.data.data.idCard;
+					this.idFront = res.data.data.idFront;
+					this.idBack = res.data.data.idBack;
+					this.shopName = res.data.data.shopName;
+					this.shopDesc = res.data.data.shopDesc;
+					this.shopAddress = res.data.data.shopAddress;
+					this.shopLogo = res.data.data.shopLogo;
+					this.shopLicence = res.data.data.shopLicence;
+					this.weChatPhoto = res.data.data.weChatPhoto;
+					this.aliPayPhoto = res.data.data.aliPayPhoto;
+					this.img1 = res.data.data.idFront;
+					this.img2 = res.data.data.idBack;
+					this.img3 = res.data.data.shopLogo;
+					this.img4 = res.data.data.weChatPhoto;
+					this.img5 = res.data.data.aliPayPhoto;
+					this.img6 = res.data.data.shopLicence;
+				}
+			});
+		},
+
 		//身份证正面
 		paizhao1() {
 			uni.chooseImage({
@@ -99,7 +128,7 @@ export default {
 				sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 				sourceType: ['album', 'camera'], //从相册选择
 				success: res => {
-					this.img1 = res.tempFilePaths;
+					// this.img1 = res.tempFilePaths;
 					//上传图片
 					uni.uploadFile({
 						url: baseURL + '/file/upload',
@@ -114,6 +143,7 @@ export default {
 							if (aaa.code == 0) {
 								console.log(uploadFileRes);
 								this.idFront = aaa.data;
+								this.img1 = aaa.data;
 								uni.showToast({
 									title: '上传成功'
 								});
@@ -130,7 +160,7 @@ export default {
 				sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 				sourceType: ['album', 'camera'], //从相册选择
 				success: res => {
-					this.img2 = res.tempFilePaths;
+					// this.img2 = res.tempFilePaths;
 					uni.uploadFile({
 						url: baseURL + '/file/upload',
 						filePath: res.tempFilePaths[0],
@@ -144,6 +174,7 @@ export default {
 							if (aaa.code == 0) {
 								console.log(uploadFileRes);
 								this.idBack = aaa.data;
+								this.img2 = aaa.data;
 								uni.showToast({
 									title: '上传成功'
 								});
@@ -160,7 +191,7 @@ export default {
 				sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 				sourceType: ['album', 'camera'], //从相册选择
 				success: res => {
-					this.img3 = res.tempFilePaths;
+					// this.img3 = res.tempFilePaths;
 					uni.uploadFile({
 						url: baseURL + '/file/upload',
 						filePath: res.tempFilePaths[0],
@@ -174,6 +205,7 @@ export default {
 							if (aaa.code == 0) {
 								console.log(uploadFileRes);
 								this.shopLogo = aaa.data;
+								this.img3 = aaa.data;
 								uni.showToast({
 									title: '上传成功'
 								});
@@ -190,7 +222,7 @@ export default {
 				sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 				sourceType: ['album', 'camera'], //从相册选择
 				success: res => {
-					this.img4 = res.tempFilePaths;
+					// this.img4 = res.tempFilePaths;
 					uni.uploadFile({
 						url: baseURL + '/file/upload',
 						filePath: res.tempFilePaths[0],
@@ -204,6 +236,7 @@ export default {
 							if (aaa.code == 0) {
 								console.log(uploadFileRes);
 								this.weChatPhoto = aaa.data;
+								this.img4 = aaa.data;
 								uni.showToast({
 									title: '上传成功'
 								});
@@ -220,7 +253,7 @@ export default {
 				sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 				sourceType: ['album', 'camera'], //从相册选择
 				success: res => {
-					this.img5 = res.tempFilePaths;
+					// this.img5 = res.tempFilePaths;
 					uni.uploadFile({
 						url: baseURL + '/file/upload',
 						filePath: res.tempFilePaths[0],
@@ -234,6 +267,7 @@ export default {
 							if (aaa.code == 0) {
 								console.log(uploadFileRes);
 								this.aliPayPhoto = aaa.data;
+								this.img5 = aaa.data;
 								uni.showToast({
 									title: '上传成功'
 								});
@@ -250,7 +284,7 @@ export default {
 				sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 				sourceType: ['album', 'camera'], //从相册选择
 				success: res => {
-					this.img6 = res.tempFilePaths;
+					// this.img6 = res.tempFilePaths;
 					uni.uploadFile({
 						url: baseURL + '/file/upload',
 						filePath: res.tempFilePaths[0],
@@ -264,6 +298,7 @@ export default {
 							if (aaa.code == 0) {
 								console.log(uploadFileRes);
 								this.shopLicence = aaa.data;
+								this.img6 = aaa.data;
 								uni.showToast({
 									title: '上传成功'
 								});
@@ -437,7 +472,7 @@ export default {
 	width: 100%;
 	padding: 20upx;
 	box-sizing: border-box;
-	input{
+	input {
 		font-size: 24upx;
 	}
 	.item {

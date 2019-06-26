@@ -1,11 +1,11 @@
-.content.data-v-ab81862a {
+.content.data-v-0ebaab56 {
   width: 100%;
   overflow-x: hidden;
 }
-.content .LG.data-v-ab81862a {
+.content .LG.data-v-0ebaab56 {
   padding: 20rpx;
 }
-.content .LG .lg_img.data-v-ab81862a {
+.content .LG .lg_img.data-v-0ebaab56 {
   color: #999999;
   margin: 20rpx 0;
   display: block;
@@ -15,22 +15,22 @@
   line-height: 140rpx;
   border: 1px dashed #dddddd;
 }
-.content .LG image.data-v-ab81862a {
+.content .LG image.data-v-0ebaab56 {
   width: 200rpx;
   height: 140rpx;
   border: 1px dashed #dddddd;
 }
-.content .liubai.data-v-ab81862a {
+.content .liubai.data-v-0ebaab56 {
   height: 20rpx;
   width: 100%;
   background-color: #f7f7f7;
 }
-.content .textInput.data-v-ab81862a {
+.content .textInput.data-v-0ebaab56 {
   padding: 20rpx;
   width: 100%;
   height: 230rpx;
 }
-.content .input.data-v-ab81862a {
+.content .input.data-v-0ebaab56 {
   padding: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
@@ -41,13 +41,17 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.content .btn.data-v-ab81862a {
+.content .input input.data-v-0ebaab56 {
+  width: 400rpx;
+}
+.content .btn.data-v-0ebaab56 {
   color: #ffffff;
   margin: 0 auto;
   margin-top: 50rpx;
   height: 95rpx;
   width: 80%;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   background-color: #6d71d5;
   text-align: center;
   line-height: 95rpx;

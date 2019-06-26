@@ -1,8 +1,8 @@
-.content.data-v-4264e474 {
+.content.data-v-5a3ae506 {
   width: 100%;
   font-size: 30rpx;
 }
-.content .head.data-v-4264e474 {
+.content .head.data-v-5a3ae506 {
   padding: 0 30rpx;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -19,16 +19,17 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.content .head .img_1.data-v-4264e474 {
+.content .head .img_1.data-v-5a3ae506 {
   height: 130rpx;
   width: 130rpx;
-  border-radius: 100%;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
 }
-.content .head .img_2.data-v-4264e474 {
+.content .head .img_2.data-v-5a3ae506 {
   height: 25rpx;
   width: 25rpx;
 }
-.content .head .msg.data-v-4264e474 {
+.content .head .msg.data-v-5a3ae506 {
   margin-left: 20rpx;
   width: 70%;
   display: -webkit-box;
@@ -41,25 +42,26 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.content .head .msg text.data-v-4264e474:first-of-type {
+.content .head .msg text.data-v-5a3ae506:first-of-type {
   font-weight: bold;
 }
-.content .liubai.data-v-4264e474 {
+.content .liubai.data-v-5a3ae506 {
   width: 100%;
   height: 20rpx;
   background-color: #f7f7f7;
 }
-.content .list.data-v-4264e474 {
+.content .list.data-v-5a3ae506 {
   width: 90%;
   margin: 0 auto;
   padding: 0 20rpx;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ffffff;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   margin-bottom: 30rpx;
 }
-.content .list .list_item.data-v-4264e474 {
+.content .list .list_item.data-v-5a3ae506 {
   height: 95rpx;
   width: 100%;
   display: -webkit-box;
@@ -72,15 +74,15 @@
           align-items: center;
   border-bottom: 1px solid #dddddd;
 }
-.content .list .list_item image.data-v-4264e474:first-of-type {
+.content .list .list_item image.data-v-5a3ae506:first-of-type {
   height: 40rpx;
   width: 40rpx;
 }
-.content .list .list_item image.data-v-4264e474:last-of-type {
+.content .list .list_item image.data-v-5a3ae506:last-of-type {
   height: 30rpx;
   width: 30rpx;
 }
-.content .list .list_item text.data-v-4264e474 {
+.content .list .list_item text.data-v-5a3ae506 {
   margin-left: 5%;
   width: 85%;
 }

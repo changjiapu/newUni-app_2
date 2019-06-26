@@ -36,7 +36,8 @@
   width: 80%;
   background-color: #6d71d5;
   margin-top: 30rpx;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   color: #ffffff;
 }
 .content .btn image.data-v-706520b0 {

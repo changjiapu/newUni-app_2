@@ -9,8 +9,8 @@
 				<text style="width: 150upx;">商品图片:</text>
 				<text>请上传商品图片</text>
 			</view>
-			<image v-if="imglist.length !== 0" :src="item" v-for="(item, index) in imglist" :key="index"></image>
-			<image v-if="imglist.length < 5" src="../../static/tupiantianjia_03.png" mode="" @click="paizhao()"></image>
+			<image v-if="productImage.length !== 0" :src="imgURl + item" v-for="(item, index) in productImage" :key="index" @click="paizhao2(index)">></image>
+			<image v-if="productImage.length < 5" src="../../static/tupiantianjia_03.png" mode="" @click="paizhao()"></image>
 		</view>
 		<view class="input_item">
 			<text style="width: 150upx;">商品价格:</text>
@@ -98,6 +98,7 @@ import { addProduct, getProductCategory, getShopProductById, updProduct } from '
 export default {
 	data() {
 		return {
+			imgURl: '',
 			isShowshangj: true,
 			isshowBtn: true,
 			categoryName: '',
@@ -128,8 +129,11 @@ export default {
 		if (options.id) {
 			this.productId = options.id;
 			this.getShopProductById(options.id);
+		} else {
+			this.getProductCategory(1, 1);
 		}
-		this.getProductCategory(1, 1);
+
+		this.imgURl = imgURl;
 	},
 	computed: {
 		...mapState(['userId', 'shopId'])
@@ -156,7 +160,8 @@ export default {
 					this.sellCount = res.data.data.sellCount;
 					this.specUnit = res.data.data.specUnit;
 					this.expressId = res.data.data.expressId;
-					// this.productImage = res.data.data.imgList;
+					this.productImage = res.data.data.imgList;
+					this.getProductCategory(1, 1);
 				}
 			});
 		},
@@ -170,6 +175,11 @@ export default {
 			getProductCategory(level, type).then(res => {
 				if (res.data.code == 0) {
 					this.categoryList = res.data.data.cateGories;
+					for (let item of res.data.data.cateGories) {
+						if (item.categoryId == this.categoryId) {
+							this.categoryName = item.categoryName;
+						}
+					}
 				}
 			});
 		},
@@ -351,7 +361,7 @@ export default {
 				expressId: this.expressId,
 				productSpecDtoList: this.guigeList
 			};
-						this.isShowshangj = false;
+			this.isShowshangj = false;
 			updProduct(params).then(res => {
 				if (res.data.code == 0) {
 					uni.showToast({
@@ -383,7 +393,7 @@ export default {
 				sourceType: ['album', 'camera'], //从相册选择
 				success: res => {
 					console.log(res);
-					this.imglist.push(...res.tempFilePaths);
+					// this.imglist.push(...res.tempFilePaths);
 					uni.uploadFile({
 						url: baseURL + '/file/upload',
 						filePath: res.tempFilePaths[0],
@@ -406,6 +416,43 @@ export default {
 				}
 			});
 		},
+		paizhao2(index) {
+			this.productImage.splice(index, 1);
+		},
+		// 		paizhao2(index) {
+		// 	console.log(this.productImage[index]);
+		// 	uni.chooseImage({
+		// 		count: 1, //默认9
+		// 		sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+		// 		sourceType: ['album', 'camera'], //从相册选择
+		// 		success: res => {
+		// 			console.log(res);
+		// 			// this.imglist.push(...res.tempFilePaths);
+		// 			uni.uploadFile({
+		// 				url: baseURL + '/file/upload',
+		// 				filePath: res.tempFilePaths[0],
+		// 				name: 'file',
+		// 				formData: {
+		// 					user: 'test',
+		// 					file: res.tempFilePaths[0]
+		// 				},
+		// 				success: uploadFileRes => {
+		// 					let aaa = JSON.parse(uploadFileRes.data);
+		// 					if (aaa.code == 0) {
+		// 						console.log(uploadFileRes);
+		// 						this.productImage[index]=aaa.data;
+		// 						// this.productImage.$set(index, aaa.data)
+		// 						// this.$set(this.productImage, index, aaa.data);
+		// 						console.log(this.productImage[index]);
+		// 						uni.showToast({
+		// 							title: '上传成功'
+		// 						});
+		// 					}
+		// 				}
+		// 			});
+		// 		}
+		// 	});
+		// },
 		radio1Change() {
 			if (this.expressId == 0) {
 				this.expressId = 1;

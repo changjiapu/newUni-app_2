@@ -146,7 +146,8 @@
   height: 10rpx;
   width: 10rpx;
   background-color: #999999;
-  border-radius: 100%;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
   margin-left: 10rpx;
 }
 .content .zhedang.data-v-11cb8a4b {
@@ -171,7 +172,8 @@
   width: 450rpx;
   height: 130rpx;
   background-color: #ffffff;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

@@ -97,6 +97,12 @@ export default {
 							data: 1
 						});
 					}, 1500);
+				} else {
+					uni.showToast({
+						title: res.data.msg,
+						icon:'none',
+						duration: 1500
+					});
 				}
 			});
 		},
@@ -145,9 +151,8 @@ export default {
 							file: res.tempFilePaths[0]
 						},
 						success: uploadFileRes => {
-							let aaa= JSON.parse(uploadFileRes.data);
-							this.imglist=aaa.data
-
+							let aaa = JSON.parse(uploadFileRes.data);
+							this.imglist = aaa.data;
 						}
 					});
 				}
@@ -185,7 +190,7 @@ export default {
 		text {
 			margin-right: 20upx;
 		}
-		input{
+		input {
 			padding-right: 20upx;
 			text-align: right;
 		}
@@ -213,7 +218,7 @@ export default {
 		text {
 			margin-right: 20upx;
 		}
-		.sex{
+		.sex {
 			position: absolute;
 			right: 50upx;
 		}

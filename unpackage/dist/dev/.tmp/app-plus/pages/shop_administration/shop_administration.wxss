@@ -54,15 +54,16 @@
   width: 150rpx;
 }
 .content .content1 .item .img.data-v-42be660a {
-  height: 50rpx;
-  width: 50rpx;
+  height: 70rpx;
+  width: 70rpx;
 }
 .content .content1 .item .jia.data-v-42be660a {
   margin-right: 30rpx;
   height: 70rpx;
   width: 70rpx;
   line-height: 70rpx;
-  border-radius: 100%;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
   text-align: center;
   color: #9999 9;
   font-weight: bold;
@@ -85,7 +86,8 @@
   background-color: #6d71d5;
   margin: auto;
   text-align: center;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   color: #ffffff;
 }
 .content .content2 .item.data-v-42be660a {
@@ -106,7 +108,8 @@
   border-bottom: 1px solid #eeeeee;
 }
 .content .content2 .item .h_img.data-v-42be660a {
-  border-radius: 100%;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
   height: 80rpx;
   width: 80rpx;
 }

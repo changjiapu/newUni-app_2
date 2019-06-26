@@ -41,13 +41,17 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.content .input input.data-v-57728475 {
+  width: 400rpx;
+}
 .content .btn.data-v-57728475 {
   color: #ffffff;
   margin: 0 auto;
   margin-top: 50rpx;
   height: 95rpx;
   width: 80%;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   background-color: #6d71d5;
   text-align: center;
   line-height: 95rpx;

@@ -188,7 +188,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #999999;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   margin-left: 20rpx;
   margin-top: 10rpx;
 }
@@ -201,7 +202,8 @@
   height: 96rpx;
   background-color: #6d71d5;
   color: #ffffff;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   text-align: center;
   line-height: 96rpx;
   margin: 0 auto;

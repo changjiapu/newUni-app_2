@@ -1,4 +1,5 @@
 // const baseUrl = 'http://192.168.1.125:8028/web'
+// const baseUrl = 'http://114.115.211.170:18028/web'
 const baseUrl = 'http://114.115.211.170:8028/web'
 import store from '../common/store/index.js'
 export function postRequest(data, url) {
@@ -21,19 +22,22 @@ export function postRequest(data, url) {
 			success: (res) => {
 				uni.hideLoading()
 				if (res.data.code == -30) {
-					uni.showModal({
-						title: '',
-						content: '登录失效是否从新登录？',
-						success: res => {
-							if (res.confirm) {
-								uni.navigateTo({
-									url: '/pages/logn/logn'
-								});
-							} else if (res.cancel) {
-								console.log('用户点击取消');
-							}
-						}
+					uni.navigateTo({
+						url: '/pages/logn/logn'
 					});
+					// uni.showModal({
+					// 	title: '',
+					// 	content: '登录失效是否从新登录？',
+					// 	success: res => {
+					// 		if (res.confirm) {
+					// 			uni.navigateTo({
+					// 				url: '/pages/logn/logn'
+					// 			});
+					// 		} else if (res.cancel) {
+					// 			console.log('用户点击取消');
+					// 		}
+					// 	}
+					// });
 				}
 				resolve(res)
 			}
@@ -57,19 +61,22 @@ export function deleteGetRequest(url) {
 			success: (res) => {
 				uni.hideLoading()
 				if (res.data.code == -30) {
-					uni.showModal({
-						title: '',
-						content: '登录失效是否从新登录？',
-						success: res => {
-							if (res.confirm) {
-								uni.navigateTo({
-									url: '/pages/logn/logn'
-								});
-							} else if (res.cancel) {
-								console.log('用户点击取消');
-							}
-						}
+					uni.navigateTo({
+						url: '/pages/logn/logn'
 					});
+					// uni.showModal({
+					// 	title: '',
+					// 	content: '登录失效是否从新登录？',
+					// 	success: res => {
+					// 		if (res.confirm) {
+					// 			uni.navigateTo({
+					// 				url: '/pages/logn/logn'
+					// 			});
+					// 		} else if (res.cancel) {
+					// 			console.log('用户点击取消');
+					// 		}
+					// 	}
+					// });
 				}
 				resolve(res)
 			}
@@ -96,19 +103,22 @@ export function deleteRequest(data, url) {
 			success: (res) => {
 				uni.hideLoading()
 				if (res.data.code == -30) {
-					uni.showModal({
-						title: '',
-						content: '登录失效是否从新登录？',
-						success: res => {
-							if (res.confirm) {
-								uni.navigateTo({
-									url: '/pages/logn/logn'
-								});
-							} else if (res.cancel) {
-								console.log('用户点击取消');
-							}
-						}
+					uni.navigateTo({
+						url: '/pages/logn/logn'
 					});
+					// uni.showModal({
+					// 	title: '',
+					// 	content: '登录失效是否从新登录？',
+					// 	success: res => {
+					// 		if (res.confirm) {
+					// 			uni.navigateTo({
+					// 				url: '/pages/logn/logn'
+					// 			});
+					// 		} else if (res.cancel) {
+					// 			console.log('用户点击取消');
+					// 		}
+					// 	}
+					// });
 				}
 				resolve(res)
 			}
@@ -131,19 +141,22 @@ export function postGetRequest(url) {
 			success: (res) => {
 				uni.hideLoading()
 				if (res.data.code == -30) {
-					uni.showModal({
-						title: '',
-						content: '登录失效是否从新登录？',
-						success: res => {
-							if (res.confirm) {
-								uni.navigateTo({
-									url: '/pages/logn/logn'
-								});
-							} else if (res.cancel) {
-								console.log('用户点击取消');
-							}
-						}
+					uni.navigateTo({
+						url: '/pages/logn/logn'
 					});
+					// uni.showModal({
+					// 	title: '',
+					// 	content: '登录失效是否从新登录？',
+					// 	success: res => {
+					// 		if (res.confirm) {
+					// 			uni.navigateTo({
+					// 				url: '/pages/logn/logn'
+					// 			});
+					// 		} else if (res.cancel) {
+					// 			console.log('用户点击取消');
+					// 		}
+					// 	}
+					// });
 				}
 				resolve(res)
 			}
@@ -167,19 +180,22 @@ export function getRequest(url) {
 			success: (res) => {
 				uni.hideLoading()
 				if (res.data.code == -30) {
-					uni.showModal({
-						title: '',
-						content: '登录失效是否从新登录？',
-						success: res => {
-							if (res.confirm) {
-								uni.navigateTo({
-									url: '/pages/logn/logn'
-								});
-							} else if (res.cancel) {
-								console.log('用户点击取消');
-							}
-						}
+					uni.navigateTo({
+						url: '/pages/logn/logn'
 					});
+					// uni.showModal({
+					// 	title: '',
+					// 	content: '登录失效是否从新登录？',
+					// 	success: res => {
+					// 		if (res.confirm) {
+					// 			uni.navigateTo({
+					// 				url: '/pages/logn/logn'
+					// 			});
+					// 		} else if (res.cancel) {
+					// 			console.log('用户点击取消');
+					// 		}
+					// 	}
+					// });
 				}
 				resolve(res)
 			}

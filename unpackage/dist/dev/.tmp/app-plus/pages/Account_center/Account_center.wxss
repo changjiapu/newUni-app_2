@@ -29,7 +29,8 @@
   height: 100rpx;
   line-height: 100rpx;
   width: 620rpx;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   background-color: #6d71d5;
   color: #ffffff;
   text-align: center;

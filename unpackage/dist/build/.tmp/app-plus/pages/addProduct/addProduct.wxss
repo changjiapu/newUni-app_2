@@ -1,8 +1,8 @@
-.content.data-v-73fff5a6 {
+.content.data-v-20bb4f40 {
   width: 100%;
   overflow-x: hidden;
 }
-.content .input_item.data-v-73fff5a6 {
+.content .input_item.data-v-20bb4f40 {
   padding: 0 30rpx;
   height: 95rpx;
   width: 100%;
@@ -16,19 +16,19 @@
           align-items: center;
   border-bottom: 1px solid #cccccc;
 }
-.content .input_item input.data-v-73fff5a6 {
+.content .input_item input.data-v-20bb4f40 {
   margin-left: 20rpx;
 }
-.content .addimg.data-v-73fff5a6 {
+.content .addimg.data-v-20bb4f40 {
   padding: 30rpx;
 }
-.content .addimg image.data-v-73fff5a6 {
+.content .addimg image.data-v-20bb4f40 {
   margin-top: 20rpx;
   height: 100rpx;
   width: 100rpx;
   border: 1px solid #cccccc;
 }
-.content .guigeList.data-v-73fff5a6 {
+.content .guigeList.data-v-20bb4f40 {
   height: 90rpx;
   width: 100%;
   display: -webkit-box;
@@ -42,10 +42,10 @@
   border-bottom: 1px solid #cccccc;
   padding: 0 50rpx;
 }
-.content .guigeList input.data-v-73fff5a6 {
+.content .guigeList input.data-v-20bb4f40 {
   width: 250rpx;
 }
-.content .radio.data-v-73fff5a6 {
+.content .radio.data-v-20bb4f40 {
   padding: 0 30rpx;
   height: 95rpx;
   width: 100%;
@@ -59,7 +59,7 @@
           align-items: center;
   border-bottom: 1px solid #cccccc;
 }
-.content .radio .msg.data-v-73fff5a6 {
+.content .radio .msg.data-v-20bb4f40 {
   margin-left: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
@@ -70,15 +70,15 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.content .radio .msg image.data-v-73fff5a6 {
+.content .radio .msg image.data-v-20bb4f40 {
   margin-left: 20rpx;
   height: 30rpx;
   width: 30rpx;
 }
-.content .radio .msg text.data-v-73fff5a6 {
+.content .radio .msg text.data-v-20bb4f40 {
   margin-left: 20rpx;
 }
-.content .shuxing.data-v-73fff5a6 {
+.content .shuxing.data-v-20bb4f40 {
   padding: 0 30rpx;
   height: 95rpx;
   width: 100%;
@@ -98,11 +98,11 @@
           box-sizing: border-box;
   border-bottom: 1px solid #cccccc;
 }
-.content .shuxing image.data-v-73fff5a6 {
+.content .shuxing image.data-v-20bb4f40 {
   height: 50rpx;
   width: 50rpx;
 }
-.content .btn.data-v-73fff5a6 {
+.content .btn.data-v-20bb4f40 {
   margin-top: 50rpx;
   margin-bottom: 50rpx;
   display: -webkit-box;
@@ -114,7 +114,7 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.content .btn text.data-v-73fff5a6 {
+.content .btn text.data-v-20bb4f40 {
   color: #ffffff;
   background-color: #6d71d5;
   width: 80%;
@@ -122,7 +122,7 @@
   text-align: center;
   line-height: 95rpx;
 }
-.content .btn_2.data-v-73fff5a6 {
+.content .btn_2.data-v-20bb4f40 {
   margin-top: 50rpx;
   margin-bottom: 50rpx;
   display: -webkit-box;
@@ -134,7 +134,7 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.content .btn_2 text.data-v-73fff5a6 {
+.content .btn_2 text.data-v-20bb4f40 {
   color: #ffffff;
   background-color: #cccccc;
   width: 80%;
@@ -142,7 +142,7 @@
   text-align: center;
   line-height: 95rpx;
 }
-.content .bottomWindow.data-v-73fff5a6 {
+.content .bottomWindow.data-v-20bb4f40 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -151,7 +151,7 @@
   top: 0;
   right: 0;
 }
-.content .bottomWindow .content.data-v-73fff5a6 {
+.content .bottomWindow .content.data-v-20bb4f40 {
   font-size: 30rpx;
   position: fixed;
   bottom: 0;
@@ -162,7 +162,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.content .bottomWindow .content .guige2.data-v-73fff5a6 {
+.content .bottomWindow .content .guige2.data-v-20bb4f40 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -173,7 +173,7 @@
   margin-top: 20rpx;
   margin-bottom: 20rpx;
 }
-.content .bottomWindow .content .guige2 text.data-v-73fff5a6 {
+.content .bottomWindow .content .guige2 text.data-v-20bb4f40 {
   padding: 10rpx 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
@@ -188,20 +188,22 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #999999;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   margin-left: 20rpx;
   margin-top: 10rpx;
 }
-.content .bottomWindow .content .guige2 text.active.data-v-73fff5a6 {
+.content .bottomWindow .content .guige2 text.active.data-v-20bb4f40 {
   color: red;
   border: 1px solid red;
 }
-.content .bottomWindow .content .btn2.data-v-73fff5a6 {
+.content .bottomWindow .content .btn2.data-v-20bb4f40 {
   width: 518rpx;
   height: 96rpx;
   background-color: #6d71d5;
   color: #ffffff;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   text-align: center;
   line-height: 96rpx;
   margin: 0 auto;

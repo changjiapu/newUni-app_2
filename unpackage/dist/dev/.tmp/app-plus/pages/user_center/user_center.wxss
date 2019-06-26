@@ -22,7 +22,8 @@
 .content .head .img_1.data-v-c087e602 {
   height: 130rpx;
   width: 130rpx;
-  border-radius: 100%;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
 }
 .content .head .img_2.data-v-c087e602 {
   height: 25rpx;
@@ -56,7 +57,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ffffff;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   margin-bottom: 30rpx;
 }
 .content .list .list_item.data-v-c087e602 {

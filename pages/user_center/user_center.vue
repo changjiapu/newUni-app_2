@@ -4,7 +4,7 @@
 			<!-- 		<image class="img_1" :src="imgURl+imglist" mode=""></image> -->
 			<image v-if="imglist" class="img_1" :src="imgURl + imglist" mode=""></image>
 			<image v-else class="img_1" :src="imglist2" mode=""></image>
-		<!-- 	<image v-else class="img_1" src="../../static/touxiang_03.png" mode=""></image> -->
+			<!-- 	<image v-else class="img_1" src="../../static/touxiang_03.png" mode=""></image> -->
 			<view class="msg">
 				<text>{{ nickName ? nickName : '未填写' }}</text>
 				<text>{{ spec_name ? spec_name : '未填写' }}</text>
@@ -60,9 +60,10 @@ export default {
 	data() {
 		return {
 			shopStatus: -1,
+			remark:'',//入住驳回理由
 			imgURl: '',
 			imglist: '', //用户头像
-			imglist2:'',//用户微信头像
+			imglist2: '', //用户微信头像
 			nickName: '', //用户昵称
 			spec_name: '' //用户签名
 		};
@@ -81,6 +82,7 @@ export default {
 			getShopStatusByUserId(userId).then(res => {
 				if (res.data.code == 0) {
 					this.shopStatus = res.data.data.shopStatus;
+					this.remark=res.data.data.remark
 				}
 			});
 		},
@@ -103,8 +105,8 @@ export default {
 			}
 			if (this.shopStatus == 2) {
 				uni.showModal({
-					title: '',
-					content: '入驻失败是否重新入驻',
+					title: '入驻驳回理由',
+					content: this.remark+',是否重新入驻?',
 					success: res => {
 						if (res.confirm) {
 							uni.navigateTo({
@@ -125,7 +127,7 @@ export default {
 		getUserById() {
 			getUserById(this.userId).then(res => {
 				this.imglist = res.data.data.userPhoto;
-				this.imglist2=res.data.data.weChatPhoto;
+				this.imglist2 = res.data.data.weChatPhoto;
 				this.spec_name = res.data.data.specName;
 				this.nickName = res.data.data.nickName;
 			});

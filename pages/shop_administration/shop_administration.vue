@@ -9,8 +9,8 @@
 		<view class="content1" v-if="currentTabs == 0">
 			<view class="item">
 				<text class="title">店铺图片</text>
-				<image class="img" :src="img" mode=""></image>
-				<text class="jia" @click="paizhao()">+</text>
+				<image v-if="img" class="img" :src="imgURl+img" mode="" @click="paizhao()"></image>
+				<text v-else class="jia" @click="paizhao()">+</text>
 			</view>
 			<view class="item">
 				<text class="title">店铺名称:</text>
@@ -95,6 +95,8 @@ export default {
 		getShopInfoById() {
 			getShopInfoById(this.shopId).then(res => {
 				if (res.data.code == 0) {
+					this.img=res.data.data.shopLogo;
+					this.shopLogo=res.data.data.shopLogo;
 					(this.shopName = res.data.data.shopName),
 						(this.phone = res.data.data.phone),
 						(this.shopDesc = res.data.data.shopDesc),
@@ -173,7 +175,7 @@ export default {
 				sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 				sourceType: ['album', 'camera'], //从相册选择
 				success: res => {
-					this.img = res.tempFilePaths[0];
+					// this.img = res.tempFilePaths[0];
 					uni.uploadFile({
 						url: baseURL + '/file/upload',
 						filePath: res.tempFilePaths[0],
@@ -187,6 +189,7 @@ export default {
 							if (aaa.code == 0) {
 								console.log(uploadFileRes);
 								this.shopLogo = aaa.data;
+								this.img=aaa.data
 								uni.showToast({
 									title: '上传成功'
 								});
@@ -240,8 +243,8 @@ export default {
 				width: 150upx;
 			}
 			.img {
-				height: 50upx;
-				width: 50upx;
+				height: 70upx;
+				width: 70upx;
 			}
 			.jia {
 				margin-right: 30upx;

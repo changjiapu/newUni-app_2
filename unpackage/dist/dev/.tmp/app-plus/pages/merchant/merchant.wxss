@@ -112,7 +112,8 @@
   margin: auto;
   margin-top: 30rpx;
   text-align: center;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   color: #ffffff;
 }
 .content .btn2.data-v-7a2f12aa {
@@ -123,7 +124,8 @@
   margin: auto;
   margin-top: 30rpx;
   text-align: center;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   color: #ffffff;
 }
 

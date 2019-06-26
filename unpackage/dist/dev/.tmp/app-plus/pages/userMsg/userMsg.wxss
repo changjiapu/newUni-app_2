@@ -89,7 +89,8 @@
 .content .item3 .right .tx.data-v-513554d9 {
   height: 80rpx;
   width: 80rpx;
-  border-radius: 100%;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
 }
 .content .item3 .right .bq.data-v-513554d9 {
   height: 30rpx;
@@ -102,7 +103,8 @@
   background-color: #6d71d5;
   margin: auto;
   text-align: center;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   color: #ffffff;
 }
 

@@ -116,7 +116,8 @@
   margin-right: 30rpx;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   border: 1px solid #999999;
   width: 360rpx;
   display: -webkit-box;
@@ -136,6 +137,7 @@
 }
 .content .tabsAll .tabs2 text.active.data-v-ac0fc45e {
   color: orangered;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
 }
 

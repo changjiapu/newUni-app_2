@@ -17,6 +17,14 @@
 			<text style="width: 150upx;">联系电话:</text>
 			<input type="number" v-model="phone" placeholder="请输入发布信息人的电话" />
 		</view>
+		<view class="input">
+			<text style="width: 150upx;">联系地址:</text>
+			<input type="text" v-model="address" placeholder="请输入发布信息人的联系地址" />
+		</view>
+		<view class="input">
+			<text style="width: 150upx;">联系姓名:</text>
+			<input type="text" v-model="userName" placeholder="请输入发布信息人的姓名" />
+		</view>
 		<view class="liubai"></view>
 		<view class="btn" @click="fabu()">立即发布</view>
 	</view>
@@ -33,7 +41,9 @@ export default {
 			title: '',
 			content: '',
 			imageId: '',
-			phone: ''
+			phone: '', //电话
+			userName: '', //姓名
+			address: '' //地址
 		};
 	},
 	onLoad() {},
@@ -77,7 +87,14 @@ export default {
 					return;
 				}
 			}
-
+			if (this.phone == '' && this.userName == '' && this.address == '') {
+				uni.showModal({
+					title: '',
+					content: '电话，地址，姓名至少输入一项',
+					showCancel: false
+				});
+				return;
+			}
 			let params = {
 				title: this.title,
 				content: this.content,
@@ -85,6 +102,8 @@ export default {
 				shopId: this.shopId,
 				userId: this.userId,
 				phone: this.phone,
+				userName: this.userName,
+				address: this.address,
 				noticeType: 2
 			};
 			addNotice(params).then(res => {
@@ -178,6 +197,9 @@ export default {
 		padding: 20upx;
 		display: flex;
 		align-items: center;
+		input{
+			width: 400upx;
+		}
 	}
 	.btn {
 		color: #ffffff;
